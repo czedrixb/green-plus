@@ -242,8 +242,53 @@ import faqs from "@/faqs";
 import milestones from "@/milestones";
 import teams from "@/team";
 import { useI18n } from "vue-i18n";
+import { useHead } from "@vueuse/head";
 
 const { t } = useI18n();
+
+useHead({
+  title: t("seo-about"),
+  meta: [
+    {
+      name: "description",
+      content: t("seo-description"),
+    },
+    {
+      name: "keywords",
+      content: [
+        t("seo-key-1"),
+        t("seo-key-2"),
+        t("seo-key-3"),
+        t("seo-key-4"),
+        t("seo-key-5"),
+        t("seo-key-6"),
+        t("seo-key-7"),
+        t("seo-key-8"),
+        t("seo-key-9"),
+        t("seo-key-10"),
+        t("seo-key-11"),
+        t("seo-key-12"),
+        t("seo-key-13"),
+      ].join(", "),
+    },
+    {
+      property: "og:title",
+      content: t("seo-about"),
+    },
+    {
+      property: "og:description",
+      content: t("seo-description"),
+    },
+    // {
+    //   property: "og:image",
+    //   content: "@/assets/images/homepage/hero-image-1b.png",
+    // },
+    {
+      property: "og:type",
+      content: "website",
+    },
+  ],
+});
 </script>
 
 <style scoped>

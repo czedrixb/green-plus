@@ -10,6 +10,9 @@ import { registerPlugins } from "@/plugins";
 // Components
 import App from "./App.vue";
 
+// SEO
+import { createHead } from "@vueuse/head";
+
 // Lang
 import { createI18n } from "vue-i18n";
 import en from "./locales/en.json";
@@ -30,6 +33,8 @@ const i18n = createI18n({
 });
 
 const app = createApp(App);
+
+app.use(createHead());
 
 registerPlugins(app);
 
