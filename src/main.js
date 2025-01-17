@@ -24,8 +24,8 @@ import { createApp } from "vue";
 import "@/styles/style.scss";
 
 const i18n = createI18n({
-  locale: "en",
-  fallbackLocale: "en",
+  locale: "ko",
+  fallbackLocale: "ko",
   messages: {
     en,
     ko,

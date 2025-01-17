@@ -3,15 +3,20 @@
     <v-parallax>
       <v-container class="pb-0" max-width="1200">
         <v-row align="center">
-          <v-col cols="12" class="py-16" lg="5">
+          <v-col cols="12" class="py-16" lg="6">
             <div>
               <div
-                class="text-43 font-weight-bold text-blue-darken-4 text-center mb-5"
+                class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0"
               >
-                {{ t("hero-big") }}
+                {{ t("hero-big-1") }}
+              </div>
+              <div
+                class="text-43 font-weight-bold text-blue-darken-4 text-center mb-5 line-break-0"
+              >
+                {{ t("hero-big-2") }}
               </div>
 
-              <div class="sub-text mb-5">
+              <div class="sub-text mb-5 line-break-0">
                 {{ t("hero-small") }}
               </div>
 
@@ -27,7 +32,7 @@
               </v-btn>
             </div>
           </v-col>
-          <v-col class="pb-0 pe-lg-5" cols="12" lg="7">
+          <v-col class="pb-0 pe-lg-5" cols="12" lg="6">
             <v-img
               src="@/assets/images/homepage/hero-image-1b.png"
               class="overflow-visible move-image-left"
@@ -42,20 +47,21 @@
         <v-row align="center">
           <v-col cols="12" lg="6">
             <v-row>
-              <v-col cols="12" lg="9">
-                <div class="mb-5 font-weight-bold text-h4">
+              <v-col cols="12" lg="10">
+                <div class="mb-5 font-weight-bold text-h4 line-break-0">
                   {{ t("why-human") }}
                 </div>
 
-                <div class="text-h6 font-weight-regular mb-5">
+                <div class="text-h6 font-weight-regular mb-5 line-break-0">
                   {{ t("in-human") }}
                 </div>
 
-                <div class="text-h6 font-weight-regular mb-5">
+                <div class="text-h6 font-weight-regular mb-5 line-break-0">
                   {{ t("trusted-business") }}
                 </div>
 
                 <v-btn
+                  to="/about-us"
                   elevation="0"
                   color="white"
                   size="x-large"
@@ -87,9 +93,14 @@
         <v-row justify="center" class="mb-14">
           <v-col cols="12" lg="9">
             <div
-              class="text-h4 font-weight-bold text-blue-darken-4 text-center"
+              class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0"
             >
-              {{ t("is-committed") }}
+              {{ t("is-committed-1") }}
+            </div>
+            <div
+              class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0"
+            >
+              {{ t("is-committed-2") }}
             </div>
           </v-col>
         </v-row>
@@ -108,10 +119,12 @@
             </div>
 
             <div class="text-center">
-              <div class="text-h5 text-blue-darken-4 font-weight-bold mb-3">
+              <div
+                class="text-h5 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
+              >
                 {{ t("profession-security") }}
               </div>
-              <div class="text-h6 font-weight-regular">
+              <div class="text-h6 font-weight-regular line-break-0">
                 {{ t("profession-security-text") }}
               </div>
             </div>
@@ -129,10 +142,12 @@
             </div>
 
             <div class="text-center">
-              <div class="text-h5 text-blue-darken-4 font-weight-bold mb-3">
+              <div
+                class="text-h5 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
+              >
                 {{ t("deploy-skilled") }}
               </div>
-              <div class="text-h6 font-weight-regular">
+              <div class="text-h6 font-weight-regular line-break-0">
                 {{ t("deploy-skilled-text") }}
               </div>
             </div>
@@ -150,10 +165,12 @@
             </div>
 
             <div class="text-center">
-              <div class="text-h5 text-blue-darken-4 font-weight-bold mb-3">
+              <div
+                class="text-h5 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
+              >
                 {{ t("efficient-facilities") }}
               </div>
-              <div class="text-h6 font-weight-regular">
+              <div class="text-h6 font-weight-regular line-break-0">
                 {{ t("efficient-facilities-text") }}
               </div>
             </div>
@@ -170,10 +187,12 @@
               ></v-img>
             </div>
             <div class="text-center">
-              <div class="text-h5 text-blue-darken-4 font-weight-bold mb-3">
+              <div
+                class="text-h5 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
+              >
                 {{ t("innovation-system") }}
               </div>
-              <div class="text-h6 font-weight-regular">
+              <div class="text-h6 font-weight-regular line-break-0">
                 {{ t("innovation-system-text") }}
               </div>
             </div>
@@ -194,12 +213,14 @@
             ></v-img>
           </v-col>
           <v-col cols="12" lg="6">
-            <div class="text-36 text-blue-darken-4 font-weight-medium mb-3">
+            <div
+              class="text-36 text-blue-darken-4 font-weight-medium mb-3 line-break-0"
+            >
               {{ t("our-vision") }}
             </div>
 
             <div>
-              <p class="text-h6 font-weight-regular">
+              <p class="text-h6 font-weight-regular line-break-0">
                 {{ t("our-vision-text") }}
               </p>
             </div>
@@ -207,11 +228,13 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12" lg="6">
-            <div class="text-36 text-blue-darken-4 font-weight-medium mb-3">
+            <div
+              class="text-36 text-blue-darken-4 font-weight-medium mb-3 line-break-0"
+            >
               {{ t("our-mission") }}
             </div>
 
-            <p class="text-h6 font-weight-regular">
+            <p class="text-h6 font-weight-regular line-break-0">
               {{ t("our-mission-text") }}
             </p>
           </v-col>

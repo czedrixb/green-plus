@@ -8,7 +8,7 @@
           <v-col cols="12" lg="6">
             <v-row>
               <v-col cols="12" lg="10">
-                <div class="text-36 deep-blue font-weight-bold">
+                <div class="text-36 deep-blue font-weight-bold line-break-0">
                   {{ t("our-mission") }}
                 </div>
               </v-col>
@@ -16,29 +16,29 @@
           </v-col>
           <v-col cols="12" lg="6" class="sub-text">
             <div class="mb-5">
-              <p>
+              <p class="line-break-0">
                 <span class="font-weight-bold"
                   >{{ t("ensuring-corporate-bold") }}:</span
                 >
                 {{ t("ensuring-corporate-text") }}
               </p>
-              <p>{{ t("protext") }}</p>
+              <p class="line-break-0">{{ t("protect") }}</p>
             </div>
 
-            <p>
+            <p class="line-break-0">
               <span class="font-weight-bold"
                 >{{ t("maintaining-business-bold") }}:</span
               >
               {{ t("maintaining-business-text") }}
             </p>
-            <p>{{ t("protect-operations") }}</p>
+            <p class="line-break-0">{{ t("protect-operations") }}</p>
           </v-col>
         </v-row>
       </v-container>
     </v-container>
 
     <v-container class="py-15" max-width="1100">
-      <div class="text-36 deep-blue font-weight-bold mb-8">
+      <div class="text-36 deep-blue font-weight-bold mb-8 line-break-0">
         {{ t("main-focus") }}
       </div>
 
@@ -58,26 +58,26 @@
                 </v-sheet>
               </v-col>
               <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium">
+                <div class="deep-blue text-25 font-weight-medium line-break-0">
                   {{ t("threat-identification") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <p class="mb-3">
+              <p class="mb-3 line-break-0">
                 {{ t("threat-text") }}
               </p>
 
-              <p>
+              <p class="line-break-0">
                 <span class="font-weight-medium"
                   >{{ t("internal-bold") }}:</span
                 >
                 {{ t("internal-text") }}
               </p>
-              <p class="mb-3">{{ t("risk-raised") }}</p>
+              <p class="mb-3 line-break-0">{{ t("risk-raised") }}</p>
 
-              <p class="mb-3">
+              <p class="mb-3 line-break-0">
                 <span class="font-weight-medium">{{ t("exernal-bold") }}:</span>
                 {{ t("exernal-text") }}
               </p>
@@ -98,18 +98,18 @@
                 </v-sheet>
               </v-col>
               <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium">
+                <div class="deep-blue text-25 font-weight-medium line-break-0">
                   {{ t("information-protection") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <p class="mb-3">
+              <p class="mb-3 line-break-0">
                 {{ t("information-text-1") }}
               </p>
 
-              <ul class="ps-5">
+              <ul class="ps-5 line-break-0">
                 <li>{{ t("information-text-2") }}</li>
                 <li>{{ t("information-text-3") }}</li>
                 <li>{{ t("information-text-4") }}</li>
@@ -131,18 +131,18 @@
                 </v-sheet>
               </v-col>
               <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium">
+                <div class="deep-blue text-25 font-weight-medium line-break-0">
                   {{ t("asset-protection") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <p class="mb-3">
+              <p class="mb-3 line-break-0">
                 {{ t("asset-text-2") }}
               </p>
 
-              <ul class="ps-5">
+              <ul class="ps-5 line-break-0">
                 <li>{{ t("asset-text-3") }}</li>
                 <li>{{ t("asset-text-4") }}</li>
                 <li>
@@ -167,14 +167,14 @@
                 </v-sheet>
               </v-col>
               <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium">
+                <div class="deep-blue text-25 font-weight-medium line-break-0">
                   {{ t("analysis") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <ul class="ps-5">
+              <ul class="ps-5 line-break-0">
                 <li>{{ t("analysis-text") }}</li>
                 <li>
                   {{ t("analysis-text-2") }}
@@ -197,14 +197,14 @@
                 </v-sheet>
               </v-col>
               <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium">
+                <div class="deep-blue text-25 font-weight-medium line-break-0">
                   {{ t("risk-management") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <ul class="ps-5">
+              <ul class="ps-5 line-break-0">
                 <li>
                   {{ t("risk-management-text") }}
                 </li>
@@ -224,25 +224,25 @@
           <v-col cols="12" lg="6">
             <v-row>
               <v-col cols="12" lg="10">
-                <div class="text-36 deep-blue font-weight-bold">
+                <div class="text-36 deep-blue font-weight-bold line-break-0">
                   {{ t("service-goals") }}
                 </div>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" lg="6" class="sub-text">
-            <p class="font-weight-bold mb-5">
+            <p class="font-weight-bold mb-5 line-break-0">
               {{ t("service-goals-bold") }}
             </p>
 
-            <p class="mb-5">
+            <p class="mb-5 line-break-0">
               <span class="font-weight-bold"
                 >{{ t("service-goals-bold-2") }}:</span
               >
               {{ t("service-goals-text") }}
             </p>
 
-            <p>
+            <p class="line-break-0">
               <span class="font-weight-bold"
                 >{{ t("service-goals-bold-3") }}:</span
               >
@@ -255,11 +255,11 @@
 
     <v-container fluid class="bg-blue-accent-4 py-15">
       <v-container max-width="1100" class="text-white text-center">
-        <div class="text-h4 mb-5 font-weight-medium">
+        <div class="text-h4 mb-5 font-weight-medium line-break-0">
           {{ t("cooperate-us") }}
         </div>
 
-        <p class="text-h6 font-weight-regular mb-5">
+        <p class="text-h6 font-weight-regular mb-5 line-break-0">
           {{ t("cooperate-text") }}
         </p>
 

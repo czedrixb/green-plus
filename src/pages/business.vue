@@ -5,7 +5,7 @@
     <v-container max-width="1100" class="py-10 mb-10">
       <v-row justify="center" class="mb-8">
         <v-col cols="12" lg="10">
-          <p class="sub-text text-center">
+          <p class="sub-text text-center line-break-0">
             {{ t("business-area-text") }}
           </p>
         </v-col>
@@ -13,20 +13,22 @@
 
       <v-row class="mb-5" align="center">
         <v-col cols="12" lg="6" class="order-2 order-lg-1">
-          <p class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+          <p
+            class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+          >
             {{ t("security-protection") }}
           </p>
 
           <div class="sub-text">
-            <p>{{ t("provision-services") }}:</p>
-            <ul class="mb-5 ps-6">
+            <p class="line-break-0">{{ t("provision-services") }}:</p>
+            <ul class="mb-5 ps-6 line-break-0">
               <li>{{ t("personal-security") }}</li>
               <li>{{ t("event-security") }}</li>
               <li>{{ t("vip-escort") }}</li>
               <li>{{ t("executive-driver") }}</li>
             </ul>
 
-            <p>
+            <p class="line-break-0">
               {{ t("security-protection-text") }}
             </p>
           </div>
@@ -57,19 +59,21 @@
           ></v-img>
         </v-col>
         <v-col cols="12" lg="6">
-          <p class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+          <p
+            class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+          >
             {{ t("security-management") }}
           </p>
 
           <div class="sub-text">
-            <p>{{ t("provision-services") }}:</p>
-            <ul class="mb-5 ps-6">
+            <p class="line-break-0">{{ t("provision-services") }}:</p>
+            <ul class="mb-5 ps-6 line-break-0">
               <li>{{ t("access-control") }}</li>
               <li>{{ t("theft-accident") }}</li>
               <li>{{ t("systematic-security") }}</li>
             </ul>
 
-            <p>
+            <p class="line-break-0">
               {{ t("security-management-text") }}
             </p>
           </div>
@@ -78,13 +82,15 @@
 
       <v-row class="mb-5" align="center">
         <v-col cols="12" lg="6" class="order-2 order-lg-1">
-          <p class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+          <p
+            class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+          >
             {{ t("facility-management") }}
           </p>
 
           <div class="sub-text">
-            <p>{{ t("provision-services") }}:</p>
-            <ul class="mb-5 ps-6">
+            <p class="line-break-0">{{ t("provision-services") }}:</p>
+            <ul class="mb-5 ps-6 line-break-0">
               <li>{{ t("central-system") }}</li>
               <li>{{ t("machine-equipment") }}</li>
               <li>{{ t("disaster-prevention") }}</li>
@@ -92,7 +98,7 @@
               <li>{{ t("comprehensive-maintenance") }}</li>
             </ul>
 
-            <p>
+            <p class="line-break-0">
               {{ t("facility-management-text") }}
             </p>
           </div>
@@ -123,13 +129,15 @@
           ></v-img>
         </v-col>
         <v-col cols="12" lg="6">
-          <p class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+          <p
+            class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+          >
             {{ t("security-services") }}
           </p>
 
           <div class="sub-text">
-            <p>{{ t("provision-services") }}:</p>
-            <ul class="mb-5 ps-6">
+            <p class="line-break-0">{{ t("provision-services") }}:</p>
+            <ul class="mb-5 ps-6 line-break-0">
               <li>{{ t("prevention-vehicle") }}</li>
               <li>{{ t("prevent-safety") }}</li>
               <li>{{ t("parking-instruction") }}</li>
@@ -139,7 +147,7 @@
               </li>
             </ul>
 
-            <p>
+            <p class="line-break-0">
               {{ t("security-services-text") }}
             </p>
           </div>
@@ -148,13 +156,15 @@
 
       <v-row class="mb-5" align="center">
         <v-col cols="12" lg="6" class="order-2 order-lg-1">
-          <p class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+          <p
+            class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+          >
             {{ t("cleaning-services") }}
           </p>
 
           <div class="sub-text">
-            <p>{{ t("provision-services") }}:</p>
-            <ul class="mb-5 ps-6">
+            <p class="line-break-0">{{ t("provision-services") }}:</p>
+            <ul class="mb-5 ps-6 line-break-0">
               <li>{{ t("daily-weekly") }}</li>
               <li>{{ t("intesive-cleaning") }}</li>
               <li>{{ t("maintain-pleasant") }}</li>
@@ -162,7 +172,7 @@
               <li>{{ t("friendly-attentive") }}</li>
             </ul>
 
-            <p>
+            <p class="line-break-0">
               {{ t("cleaning-services-text") }}
             </p>
           </div>
@@ -185,11 +195,11 @@
 
     <v-container fluid class="bg-blue-accent-4 py-15">
       <v-container max-width="1100" class="text-white text-center">
-        <div class="text-h4 mb-5 font-weight-bold">
+        <div class="text-h4 mb-5 font-weight-bold line-break-0">
           {{ t("partners-safe") }}
         </div>
 
-        <p class="text-h6 font-weight-regular mb-5">
+        <p class="text-h6 font-weight-regular mb-5 line-break-0">
           {{ t("partners-safe-text") }}.
         </p>
 
@@ -198,7 +208,7 @@
           elevation="0"
           color="white"
           size="x-large"
-          class="text-blue-accent-4 text-none font-weight-bold"
+          class="text-blue-accent-4 text-none font-weight-bold line-break-0"
           rounded="lg"
         >
           {{ t("contact") }}

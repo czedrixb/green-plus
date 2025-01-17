@@ -1,14 +1,14 @@
 <template>
   <v-container max-width="1200" class="py-lg-16">
-    <v-row align="content" class="mb-16">
+    <v-row align="center" class="mb-16">
       <v-col cols="12" lg="6" class="pt-10">
-        <div class="text-h3 font-weight-bold mb-5">
+        <div class="text-h3 font-weight-bold mb-5 line-break-0">
           {{ t("Contact an expert") }}
         </div>
 
         <div class="sub-text mb-8">
-          <p class="mb-5">{{ t("hear-you") }}</p>
-          <p>
+          <p class="mb-5 line-break-0">{{ t("hear-you") }}</p>
+          <p class="line-break-0">
             {{ t("any-questions") }}
           </p>
         </div>
@@ -60,16 +60,18 @@
             </v-sheet>
           </v-col>
           <v-col cols="10">
-            <p class="sub-text font-weight-medium">
+            <p class="sub-text font-weight-medium line-break-0">
               {{ t("address") }}
             </p>
           </v-col>
         </v-row>
       </v-col>
       <v-col cols="12" class="bg-grey-lighten-5 pa-lg-5" lg="6">
-        <div class="text-36 font-weight-medium mb-5">{{ t("need-help") }}</div>
+        <div class="text-36 font-weight-medium mb-5 line-break-0">
+          {{ t("need-help") }}
+        </div>
 
-        <p class="sub-text mb-5">
+        <p class="sub-text mb-5 line-break-0">
           {{ t("help-text") }}
         </p>
         <v-form v-model="valid">

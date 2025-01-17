@@ -7,17 +7,17 @@
         <v-col cols="12" lg="6">
           <v-row>
             <v-col cols="12" lg="10">
-              <div class="text-36 deep-blue font-weight-bold">
+              <div class="text-36 deep-blue font-weight-bold line-break-0">
                 {{ t("looking-experts") }}
               </div>
             </v-col>
           </v-row>
         </v-col>
         <v-col cols="12" lg="6" class="sub-text">
-          <p class="mb-5">
+          <p class="mb-5 line-break-0">
             {{ t("looking-experts-text") }}
           </p>
-          <p>
+          <p class="line-break-0">
             {{ t("looking-experts-text-2") }}
           </p>
         </v-col>
@@ -47,10 +47,10 @@
 
     <v-container fluid class="grey-section py-16">
       <v-container max-width="1100">
-        <div class="text-36 deep-blue font-weight-bold mb-2">
+        <div class="text-36 deep-blue font-weight-bold mb-2 line-break-0">
           {{ t("job-postings") }}
         </div>
-        <p class="sub-text mb-8">
+        <p class="sub-text mb-8 line-break-0">
           {{ t("latest-hiring") }}
         </p>
 
@@ -69,7 +69,7 @@
                     size="50"
                     icon="mdi-briefcase-variant-outline"
                   ></v-icon>
-                  <div class="text-25 font-weight-medium">
+                  <div class="text-25 font-weight-medium line-break-0">
                     {{ t(career.position) }}
                   </div>
                 </div>
@@ -95,7 +95,7 @@
                   <v-sheet
                     v-for="(flair, index) in career.flairs"
                     :key="index"
-                    class="sub-text py-2 px-3"
+                    class="sub-text py-2 px-3 line-break-0"
                     rounded="lg"
                     color="grey-lighten-4"
                   >

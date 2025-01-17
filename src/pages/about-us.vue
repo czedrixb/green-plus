@@ -6,13 +6,17 @@
       <v-row justify="space-between" align="center">
         <v-col cols="12" lg="6" class="order-2 order-lg-1">
           <div>
-            <div class="text-h3 font-weight-medium text-blue-darken-4 mb-5">
+            <div
+              class="text-h3 font-weight-medium text-blue-darken-4 mb-5 line-break-0"
+            >
               {{ t("ceo-message") }}
             </div>
 
             <div class="sub-text">
-              <p class="font-weight-bold">1. {{ t("providing-heartfelt") }}</p>
-              <p>
+              <p class="font-weight-bold line-break-0">
+                1. {{ t("providing-heartfelt") }}
+              </p>
+              <p class="line-break-0">
                 {{ t("human-green-plus") }}
                 <span class="font-weight-bold">{{
                   t("providing-heartfelt-bold")
@@ -21,10 +25,10 @@
               </p>
             </div>
             <div class="sub-text">
-              <p class="font-weight-bold">
+              <p class="font-weight-bold line-break-0">
                 2. {{ t("professionalism-pursuit") }}
               </p>
-              <p>
+              <p class="line-break-0">
                 {{ t("human-green-plus") }}
                 <span class="font-weight-bold">{{
                   t("professionalism-pursuit-bold")
@@ -33,8 +37,10 @@
               </p>
             </div>
             <div class="sub-text">
-              <p class="font-weight-medium">3. {{ t("company-grows") }}</p>
-              <p>
+              <p class="font-weight-medium line-break-0">
+                3. {{ t("company-grows") }}
+              </p>
+              <p class="line-break-0">
                 {{ t("human-green-plus") }}
                 <span class="font-weight-bold">{{
                   t("company-grows-bold")
@@ -57,15 +63,17 @@
     </v-container>
 
     <v-container max-width="1200" class="mb-10">
-      <div class="text-h4 font-weight-bold text-blue-darken-4 mb-5">
+      <div
+        class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
+      >
         {{ t("business-philosophy") }}
       </div>
 
       <div class="sub-text mb-8">
-        <p>
+        <p class="line-break-0">
           {{ t("business-philosophy-text") }}
         </p>
-        <p>{{ t("i-believe") }}.</p>
+        <p class="line-break-0">{{ t("i-believe") }}.</p>
       </div>
 
       <v-row>
@@ -77,13 +85,15 @@
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5">{{ t("passion-energy") }}</div>
+              <div class="text-h5 line-break-0">{{ t("passion-energy") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
-              <p class="sub-text font-weight-regular">
+              <p class="sub-text font-weight-regular line-break-0">
                 {{ t("passion-energy-text") }}
               </p>
-              <p class="sub-text font-weight-regular">{{ t("approach") }}</p>
+              <p class="sub-text font-weight-regular line-break-0">
+                {{ t("approach") }}
+              </p>
             </v-card-text>
           </v-card>
         </v-col>
@@ -95,13 +105,13 @@
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5">{{ t("adaptability") }}</div>
+              <div class="text-h5 line-break-0">{{ t("adaptability") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
-              <p class="sub-text font-weight-regular">
+              <p class="sub-text font-weight-regular line-break-0">
                 {{ t("adaptability-text") }}
               </p>
-              <p class="sub-text font-weight-regular">
+              <p class="sub-text font-weight-regular line-break-0">
                 {{ t("maintain-innovation") }}
               </p>
             </v-card-text>
@@ -115,13 +125,15 @@
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5">{{ t("joy-happiness") }}</div>
+              <div class="text-h5 line-break-0">{{ t("joy-happiness") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
-              <p class="sub-text font-weight-regular">
+              <p class="sub-text font-weight-regular line-break-0">
                 {{ t("joy-happiness-text") }}
               </p>
-              <p class="sub-text font-weight-regular">{{ t("try-cycle") }}</p>
+              <p class="sub-text font-weight-regular line-break-0">
+                {{ t("try-cycle") }}
+              </p>
             </v-card-text>
           </v-card>
         </v-col>
@@ -129,11 +141,13 @@
     </v-container>
 
     <v-container class="mb-10" max-width="1200">
-      <div class="text-h4 font-weight-bold text-blue-darken-4 text-center mb-3">
+      <div
+        class="text-h4 font-weight-bold text-blue-darken-4 text-center mb-3 line-break-0"
+      >
         {{ t("major-milestone") }}
       </div>
 
-      <p class="sub-text text-center mb-8">
+      <p class="sub-text text-center mb-8 line-break-0">
         {{ t("major-milestone-text") }}
       </p>
 
@@ -156,14 +170,14 @@
               <v-row align="center">
                 <v-col cols="12" lg="3" class="py-1">
                   <div
-                    class="text-h6 text-blue-darken-3 font-weight-medium text-center text-lg-start"
+                    class="text-h6 text-blue-darken-3 font-weight-medium text-center text-lg-start line-break-0"
                   >
                     {{ t(milestone.date) }}
                   </div>
                 </v-col>
                 <v-col cols="12" lg="9" class="py-1">
                   <div
-                    class="sub-text text-center font-weight-medium text-lg-start"
+                    class="sub-text text-center font-weight-medium text-lg-start line-break-0"
                   >
                     {{ t(milestone.text) }}
                   </div>
@@ -176,13 +190,15 @@
     </v-container>
 
     <v-container class="mb-10" max-width="1200">
-      <div class="text-h3 font-weight-bold text-center text-blue-darken-4 mb-5">
+      <div
+        class="text-h3 font-weight-bold text-center text-blue-darken-4 mb-5 line-break-0"
+      >
         {{ t("passionate-team") }}
       </div>
 
       <v-row justify="center" class="mb-8">
         <v-col cols="12" lg="7" class="text-center">
-          <p class="sub-text">
+          <p class="sub-text line-break-0">
             {{ t("passionate-team-text") }}
           </p>
         </v-col>
@@ -203,10 +219,12 @@
               ></div>
 
               <div class="mb-4">
-                <p class="text-h6 text-blue-darken-3 font-weight-medium">
+                <p
+                  class="text-h6 text-blue-darken-3 font-weight-medium line-break-0"
+                >
                   {{ team.name }}
                 </p>
-                <p class="text-body-1">{{ t(team.position) }}</p>
+                <p class="text-body-1 line-break-0">{{ t(team.position) }}</p>
               </div>
 
               <div class="d-flex ga-1">
