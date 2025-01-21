@@ -200,7 +200,7 @@
         </div>
 
         <p class="text-h6 font-weight-regular mb-5 line-break-0">
-          {{ t("partners-safe-text") }}.
+          {{ t("partners-safe-text") }}
         </p>
 
         <v-btn

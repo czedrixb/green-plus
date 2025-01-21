@@ -17,10 +17,6 @@
                 1. {{ t("providing-heartfelt") }}
               </p>
               <p class="line-break-0">
-                {{ t("human-green-plus") }}
-                <span class="font-weight-bold">{{
-                  t("providing-heartfelt-bold")
-                }}</span>
                 {{ t("providing-heartfelt-text") }}
               </p>
             </div>
@@ -29,22 +25,14 @@
                 2. {{ t("professionalism-pursuit") }}
               </p>
               <p class="line-break-0">
-                {{ t("human-green-plus") }}
-                <span class="font-weight-bold">{{
-                  t("professionalism-pursuit-bold")
-                }}</span>
                 {{ t("professionalism-pursuit-text") }}
               </p>
             </div>
             <div class="sub-text">
-              <p class="font-weight-medium line-break-0">
+              <p class="font-weight-bold line-break-0">
                 3. {{ t("company-grows") }}
               </p>
               <p class="line-break-0">
-                {{ t("human-green-plus") }}
-                <span class="font-weight-bold">{{
-                  t("company-grows-bold")
-                }}</span>
                 {{ t("company-grows-text") }}
               </p>
             </div>

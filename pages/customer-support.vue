@@ -60,21 +60,21 @@
                     {{ t("schedule-date-2") }}
                   </li>
                   <li>
-                    <span class="font-weight-medium">{{
-                      t("schedule-date-2")
-                    }}</span>
+                    <span class="font-weight-medium"
+                      >{{ t("schedule-date-2") }}:</span
+                    >
                     {{ t("schedule-time-2") }}
                   </li>
                   <li>
-                    <span class="font-weight-medium">{{
-                      t("schedule-date-3")
-                    }}</span>
+                    <span class="font-weight-medium"
+                      >{{ t("schedule-date-3") }}:</span
+                    >
                     {{ t("schedule-time-3") }}
                   </li>
                   <li>
-                    <span class="font-weight-medium">{{
-                      t("schedule-date-4")
-                    }}</span>
+                    <span class="font-weight-medium"
+                      >{{ t("schedule-date-4") }}:</span
+                    >
                     {{ t("schedule-time-1") }}
                   </li>
                 </ul>

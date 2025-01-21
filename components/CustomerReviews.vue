@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="bg-blue-accent-4 text-white py-16">
-    <v-container max-width="1100">
+    <v-container max-width="1200">
       <div class="text-center mb-10">
         <div class="mb-5 font-weight-medium text-h4">
           {{ t("customer-review") }}

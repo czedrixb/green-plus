@@ -3,17 +3,12 @@
     <v-parallax>
       <v-container class="pb-0 pt-16" max-width="1200">
         <v-row align="center" class="py-10">
-          <v-col cols="12" class="py-16" lg="6">
+          <v-col cols="12 overflow-hidden" class="py-16" lg="6">
             <div>
               <div
-                class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0"
+                class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-5"
               >
-                {{ t("hero-big-1") }}
-              </div>
-              <div
-                class="text-43 font-weight-bold text-blue-darken-4 text-center mb-5 line-break-0"
-              >
-                {{ t("hero-big-2") }}
+                {{ t("hero-big") }}
               </div>
 
               <div class="sub-text mb-5 line-break-0">
@@ -52,13 +47,9 @@
                   {{ t("why-human") }}
                 </div>
 
-                <div class="text-h6 font-weight-regular mb-5 line-break-0">
+                <p class="text-h6 font-weight-regular mb-5 line-break-0 mb-5">
                   {{ t("in-human") }}
-                </div>
-
-                <div class="text-h6 font-weight-regular mb-5 line-break-0">
-                  {{ t("trusted-business") }}
-                </div>
+                </p>
 
                 <v-btn
                   to="/about-us"
@@ -90,20 +81,11 @@
 
     <v-container fluid class="bg-grey-lighten-2">
       <v-container max-width="1100" class="py-16">
-        <v-row justify="center" class="mb-14">
-          <v-col cols="12" lg="9">
-            <div
-              class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0"
-            >
-              {{ t("is-committed-1") }}
-            </div>
-            <div
-              class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0"
-            >
-              {{ t("is-committed-2") }}
-            </div>
-          </v-col>
-        </v-row>
+        <div
+          class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-15"
+        >
+          {{ t("is-committed") }}
+        </div>
 
         <v-row>
           <v-col class="pa-lg-5" cols="12" lg="6">
@@ -214,7 +196,7 @@
           </v-col>
           <v-col cols="12" lg="6">
             <div
-              class="text-36 text-blue-darken-4 font-weight-medium mb-3 line-break-0"
+              class="text-36 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
             >
               {{ t("our-vision") }}
             </div>
@@ -229,7 +211,7 @@
         <v-row align="center">
           <v-col cols="12" lg="6">
             <div
-              class="text-36 text-blue-darken-4 font-weight-medium mb-3 line-break-0"
+              class="text-36 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
             >
               {{ t("our-mission") }}
             </div>
