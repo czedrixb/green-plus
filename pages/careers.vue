@@ -2,18 +2,14 @@
   <div>
     <SectionHeader title="Work with us" />
 
-    <v-container max-width="1100" class="py-16 mb-8">
+    <v-container max-width="1100" class="px-md-10 py-16 mb-8">
       <v-row class="mb-8">
-        <v-col cols="12" lg="6">
-          <v-row>
-            <v-col cols="12" lg="10">
-              <div class="text-36 deep-blue font-weight-bold line-break-0">
-                {{ t("looking-experts") }}
-              </div>
-            </v-col>
-          </v-row>
+        <v-col cols="12" sm="6" md="6" lg="6">
+          <div class="text-36 deep-blue font-weight-bold line-break-0">
+            {{ t("looking-experts") }}
+          </div>
         </v-col>
-        <v-col cols="12" lg="6" class="sub-text">
+        <v-col cols="12" sm="6" md="6" lg="6" class="sub-text">
           <p class="mb-5 line-break-0">
             {{ t("looking-experts-text") }}
           </p>
@@ -24,7 +20,7 @@
       </v-row>
 
       <v-row align="center">
-        <v-col cols="12" lg="4">
+        <v-col cols="12" sm="5" md="4" lg="4">
           <v-img
             src="/images/careers/careers-img1.png"
             max-width="l00%"
@@ -33,7 +29,7 @@
             cover
           ></v-img>
         </v-col>
-        <v-col cols="12" lg="8">
+        <v-col cols="12" sm="7" md="8" lg="8">
           <v-img
             src="/images/careers/careers-img2.png"
             max-width="l00%"
@@ -63,7 +59,7 @@
         >
           <v-card-text class="pa-8">
             <v-row class="mb-3" align="center">
-              <v-col cols="12" lg="6">
+              <v-col cols="12" md="6" lg="6">
                 <div class="d-flex align-lg-center ga-5">
                   <v-icon
                     size="50"
@@ -74,7 +70,7 @@
                   </div>
                 </div>
               </v-col>
-              <v-col cols="12" lg="6" class="d-none d-lg-block">
+              <v-col cols="12" md="6" lg="6" class="d-none d-lg-block">
                 <div class="d-flex justify-end">
                   <v-btn
                     to="/contact-us"

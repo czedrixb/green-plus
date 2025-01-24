@@ -1,18 +1,18 @@
 <template>
   <div>
-    <SectionHeader title="About Us" />
+    <SectionHeader title="About Us" class="mb-md-8" />
 
-    <v-container max-width="1200" class="py-15">
+    <v-container max-width="1200" class="px-md-10 py-10">
       <v-row justify="space-between" align="center">
-        <v-col cols="12" lg="6" class="order-2 order-lg-1">
+        <v-col cols="12" sm="6" md="6" lg="6" class="order-2 order-lg-1">
           <div>
             <div
-              class="text-h3 font-weight-medium text-blue-darken-4 mb-5 line-break-0"
+              class="text-h3 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
             >
               {{ t("ceo-message") }}
             </div>
 
-            <div class="sub-text">
+            <div class="sub-text mb-5">
               <p class="font-weight-bold line-break-0">
                 1. {{ t("providing-heartfelt") }}
               </p>
@@ -20,7 +20,7 @@
                 {{ t("providing-heartfelt-text") }}
               </p>
             </div>
-            <div class="sub-text">
+            <div class="sub-text mb-5">
               <p class="font-weight-bold line-break-0">
                 2. {{ t("professionalism-pursuit") }}
               </p>
@@ -38,7 +38,13 @@
             </div>
           </div>
         </v-col>
-        <v-col class="px-lg-5 order-1 order-lg-2" cols="12" lg="6">
+        <v-col
+          class="px-lg-5 order-1 order-lg-2"
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+        >
           <v-img
             src="/images/about-us/ceo-message.png"
             cover
@@ -50,7 +56,7 @@
       </v-row>
     </v-container>
 
-    <v-container max-width="1200" class="mb-10">
+    <v-container max-width="1200" class="px-md-10 py-13">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
       >
@@ -58,69 +64,59 @@
       </div>
 
       <div class="sub-text mb-8">
-        <p class="line-break-0">
-          {{ t("business-philosophy-text") }}
-        </p>
-        <p class="line-break-0">{{ t("i-believe") }}.</p>
+        <p class="line-break-0">{{ t("management-philosophy") }}</p>
       </div>
 
       <v-row>
-        <v-col cols="12" lg="4">
+        <v-col cols="12" md="4" lg="4">
           <v-card
-            class="px-5 py-8"
+            class="px-4 py-3"
             rounded="lg"
             elevation="0"
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5 line-break-0">{{ t("passion-energy") }}</div>
+              <div class="text-h5 line-break-0">1. {{ t("adaptation") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
               <p class="sub-text font-weight-regular line-break-0">
-                {{ t("passion-energy-text") }}
-              </p>
-              <p class="sub-text font-weight-regular line-break-0">
-                {{ t("approach") }}
+                {{ t("adaptation-text") }}
               </p>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="4">
+        <v-col cols="12" md="4" lg="4">
           <v-card
-            class="px-5 py-8"
+            class="px-5 py-6"
             rounded="lg"
             elevation="0"
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5 line-break-0">{{ t("adaptability") }}</div>
+              <div class="text-h5 line-break-0">2. {{ t("stability") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
               <p class="sub-text font-weight-regular line-break-0">
-                {{ t("adaptability-text") }}
-              </p>
-              <p class="sub-text font-weight-regular line-break-0">
-                {{ t("maintain-innovation") }}
+                {{ t("stability-text") }}
               </p>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="4">
+        <v-col cols="12" md="4" lg="4">
           <v-card
-            class="px-5 py-8"
+            class="px-5 py-6"
             rounded="lg"
             elevation="0"
             color="blue-accent-4"
           >
             <v-card-title class="text-center font-weight-bold">
-              <div class="text-h5 line-break-0">{{ t("joy-happiness") }}</div>
+              <div class="text-h5 line-break-0">
+                3. {{ t("sustainability") }}
+              </div>
             </v-card-title>
             <v-card-text class="text-center">
               <p class="sub-text font-weight-regular line-break-0">
-                {{ t("joy-happiness-text") }}
-              </p>
-              <p class="sub-text font-weight-regular line-break-0">
-                {{ t("try-cycle") }}
+                {{ t("sustainability-text") }}
               </p>
             </v-card-text>
           </v-card>
@@ -128,7 +124,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="mb-10" max-width="1200">
+    <v-container class="py-10" max-width="1200">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 text-center mb-3 line-break-0"
       >
@@ -144,6 +140,7 @@
           v-for="milestone in milestones"
           :key="milestone.date"
           cols="12"
+          md="9"
           lg="9"
           class="pt-0"
         >
@@ -177,7 +174,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="mb-10" max-width="1200">
+    <v-container class="px-md-10 py-13" max-width="1200">
       <div
         class="text-h3 font-weight-bold text-center text-blue-darken-4 mb-5 line-break-0"
       >
@@ -197,6 +194,7 @@
           v-for="team in teams"
           :key="team.name"
           cols="12"
+          md="4"
           lg="4"
           class="px-lg-10"
         >

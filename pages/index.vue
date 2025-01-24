@@ -1,9 +1,53 @@
 <template>
   <div>
-    <v-parallax>
-      <v-container class="pb-0 pt-16" max-width="1200">
-        <v-row align="center" class="py-10">
-          <v-col cols="12 overflow-hidden" class="py-16" lg="6">
+    <div class="d-none d-lg-block d-md-block">
+      <v-parallax>
+        <v-container class="pb-0 pt-16" max-width="1200">
+          <v-row align="center" class="py-10">
+            <v-col cols="12 overflow-hidden" class="py-16" md="6" lg="6">
+              <div>
+                <div
+                  class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-5"
+                >
+                  {{ t("hero-big") }}
+                </div>
+
+                <div class="sub-text mb-5 line-break-0">
+                  {{ t("hero-small") }}
+                </div>
+
+                <v-btn
+                  to="/contact-us"
+                  elevation="0"
+                  color="blue-accent-4"
+                  size="x-large"
+                  rounded="lg"
+                  class="text-none font-weight-regular"
+                >
+                  {{ t("hero-btn") }}
+                </v-btn>
+              </div>
+            </v-col>
+            <v-col
+              class="pb-0 pe-lg-5 d-flex justify-center"
+              cols="12"
+              md="6"
+              lg="6"
+            >
+              <v-img
+                src="/images/homepage/hero-image-1b.png"
+                class="overflow-visible move-image-left"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-parallax>
+    </div>
+
+    <div class="d-block d-md-none d-lg-none">
+      <v-container class="pb-3 pt-16" max-width="1200">
+        <v-row align="center" class="pt-10 pb-0">
+          <v-col cols="12" class="py-16" lg="6">
             <div>
               <div
                 class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-5"
@@ -27,7 +71,7 @@
               </v-btn>
             </div>
           </v-col>
-          <v-col class="pb-0 pe-lg-5" cols="12" lg="6">
+          <v-col class="pe-lg-5 pt-15 overflow-hidden" cols="12" lg="6">
             <v-img
               src="/images/homepage/hero-image-1b.png"
               class="overflow-visible move-image-left"
@@ -35,12 +79,12 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-parallax>
+    </div>
 
     <v-container fluid class="bg-blue-accent-4 text-white py-16">
       <v-container max-width="1100">
         <v-row align="center">
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <v-row>
               <v-col cols="12" lg="10">
                 <div class="mb-5 font-weight-bold text-h4 line-break-0">
@@ -64,7 +108,7 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
                 src="/images/homepage/green-plus.png"
@@ -88,7 +132,7 @@
         </div>
 
         <v-row>
-          <v-col class="pa-lg-5" cols="12" lg="6">
+          <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
                 src="/images/homepage/professional-security.png"
@@ -111,7 +155,7 @@
               </div>
             </div>
           </v-col>
-          <v-col class="pa-lg-5" cols="12" lg="6">
+          <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
                 src="/images/homepage/deploy-skilled.png"
@@ -134,7 +178,7 @@
               </div>
             </div>
           </v-col>
-          <v-col class="pa-lg-5" cols="12" lg="6">
+          <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
                 src="/images/homepage/efficient-facilities.png"
@@ -157,7 +201,7 @@
               </div>
             </div>
           </v-col>
-          <v-col class="pa-lg-5" cols="12" lg="6">
+          <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
                 src="/images/homepage/innovation-system.png"
@@ -186,7 +230,7 @@
     <v-container fluid class="bg-white py-16">
       <v-container max-width="1100">
         <v-row class="mb-8" align="center">
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <v-img
               src="/images/homepage/our-vision.png"
               cover
@@ -194,7 +238,7 @@
               rounded="lg"
             ></v-img>
           </v-col>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <div
               class="text-36 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
             >
@@ -209,7 +253,7 @@
           </v-col>
         </v-row>
         <v-row align="center">
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <div
               class="text-36 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
             >
@@ -220,7 +264,7 @@
               {{ t("our-mission-text") }}
             </p>
           </v-col>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <v-img
               src="/images/homepage/our-mission.png"
               cover

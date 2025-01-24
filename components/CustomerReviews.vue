@@ -2,7 +2,7 @@
   <v-container fluid class="bg-blue-accent-4 text-white py-16">
     <v-container max-width="1200">
       <div class="text-center mb-10">
-        <div class="mb-5 font-weight-medium text-h4">
+        <div class="mb-5 font-weight-bold text-h4">
           {{ t("customer-review") }}
         </div>
 
@@ -16,6 +16,8 @@
           v-for="review in reviews"
           :key="review.customer"
           cols="12"
+          sm="6"
+          md="4"
           lg="4"
         >
           <div class="bg-white py-3 px-2 rounded-lg">

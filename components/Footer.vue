@@ -2,7 +2,7 @@
   <div class="bg-footer text-white">
     <v-container class="py-10" max-width="1200">
       <v-row>
-        <v-col cols="12" lg="3">
+        <v-col cols="12" md="3" lg="3">
           <v-img
             width="292px"
             height="34px"
@@ -11,34 +11,38 @@
         </v-col>
         <v-col
           cols="12"
+          md="3"
           lg="3"
-          class="text-subtitle-2 d-flex justify-lg-center"
+          class="text-subtitle-2 d-flex justify-md-center"
         >
           <div>
-            <div class="pt-2 mb-lg-8">{{ t("menu") }}</div>
+            <div class="pt-2 mb-8">{{ t("menu") }}</div>
 
             <div class="d-flex ga-4 flex-column">
-              <router-link
+              <NuxtLink
                 v-for="link in navLinks"
                 :key="link.title"
                 :to="link.to"
                 class="footer-link"
-                >{{ t(link.title) }}</router-link
+                >{{ t(link.title) }}</NuxtLink
               >
             </div>
           </div>
         </v-col>
-        <v-col cols="12" lg="3" class="text-subtitle-2">
-          <div class="pt-2 mb-lg-8">{{ t("useful-links") }}</div>
+        <v-col cols="12" md="3" lg="3" class="text-subtitle-2">
+          <div class="pt-2 mb-8">{{ t("useful-links") }}</div>
 
           <div class="d-flex ga-4 flex-column">
-            <div>{{ t("privacy-policy") }}</div>
-            <div>{{ t("cookie-policy") }}</div>
-            <div>{{ t("license") }}</div>
+            <NuxtLink class="footer-link" to="/privacy-policy">{{
+              t("privacy-policy")
+            }}</NuxtLink>
+            <NuxtLink class="footer-link" to="/terms-of-service">{{
+              t("terms-service")
+            }}</NuxtLink>
           </div>
         </v-col>
-        <v-col cols="12" lg="3" class="text-subtitle-2">
-          <div class="pt-2 mb-lg-8">{{ t("contact") }}</div>
+        <v-col cols="12" md="3" lg="3" class="text-subtitle-2">
+          <div class="pt-2 mb-8">{{ t("contact") }}</div>
 
           <div class="mb-8">
             {{ t("address") }}

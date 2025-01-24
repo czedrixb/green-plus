@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Key achievements" />
 
-    <v-container max-width="1200" class="py-15 mb-5">
+    <v-container max-width="1200" class="px-md-10 py-15 mb-5">
       <v-row justify="center" class="mb-10">
         <v-col cols="12" lg="10">
           <div class="sub-text text-center">
@@ -20,7 +20,7 @@
       </v-row>
 
       <v-row>
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -41,7 +41,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -54,7 +54,7 @@
             </v-col>
             <v-col cols="8" lg="10">
               <v-row align="center" justify="center" no-gutters>
-                <v-col cols="2" lg="3">
+                <v-col cols="2" sm="6" md="4" lg="3">
                   <v-img
                     src="/images/key-achievements/hankuk-label.png"
                     height="50"
@@ -71,7 +71,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -92,7 +92,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -113,7 +113,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -134,7 +134,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -153,7 +153,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -172,7 +172,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -191,7 +191,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -210,7 +210,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -229,7 +229,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -248,7 +248,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -267,7 +267,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -286,7 +286,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -305,7 +305,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -324,7 +324,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -343,7 +343,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -362,7 +362,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -381,7 +381,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img
@@ -400,7 +400,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12" lg="3" class="pb-8">
+        <v-col cols="12" sm="6" md="4" lg="3" class="pb-8">
           <v-row justify="center" align="center">
             <v-col class="pb-0 d-flex justify-center" cols="12" lg="10">
               <v-img

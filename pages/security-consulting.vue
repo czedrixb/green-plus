@@ -5,16 +5,18 @@
     <v-container fluid class="grey-section py-16 mb-8">
       <v-container max-width="1100">
         <v-row>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" md="6" lg="6">
             <v-row>
               <v-col cols="12" lg="10">
-                <div class="text-36 deep-blue font-weight-bold line-break-0">
+                <div
+                  class="text-36 deep-blue text-sm-center font-weight-bold line-break-0"
+                >
                   {{ t("our-mission") }}
                 </div>
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" lg="6" class="sub-text">
+          <v-col cols="12" md="6" lg="6" class="sub-text">
             <div class="mb-5">
               <p class="line-break-0">
                 <span class="font-weight-bold"
@@ -37,16 +39,16 @@
       </v-container>
     </v-container>
 
-    <v-container class="py-15" max-width="1100">
+    <v-container class="px-sm-8 px-md-10 py-15" max-width="1100">
       <div class="text-36 deep-blue font-weight-bold mb-8 line-break-0">
-        {{ t("main-focus") }}
+        {{ t("core-management") }}
       </div>
 
       <v-row>
-        <v-col cols="12" lg="6">
+        <v-col cols="12" md="6" lg="6">
           <div class="mb-8">
             <v-row class="mb-1">
-              <v-col cols="2" lg="1" class="pe-0 pe-lg-3">
+              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
                 <v-sheet
                   rounded="circle"
                   class="text-h6 font-weight-medium d-flex justify-center align-center"
@@ -57,36 +59,31 @@
                   1
                 </v-sheet>
               </v-col>
-              <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium line-break-0">
-                  {{ t("threat-identification") }}
+              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
+                <div class="deep-blue text-25 font-weight-bold line-break-0">
+                  {{ t("threat-identity") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
               <p class="mb-3 line-break-0">
-                {{ t("threat-text") }}
+                {{ t("threat-identity-text") }}
               </p>
-
-              <p class="line-break-0">
-                <span class="font-weight-medium"
-                  >{{ t("internal-bold") }}:</span
-                >
-                {{ t("internal-text") }}
-              </p>
-              <p class="mb-3 line-break-0">{{ t("risk-raised") }}</p>
 
               <p class="mb-3 line-break-0">
-                <span class="font-weight-medium">{{ t("exernal-bold") }}:</span>
-                {{ t("exernal-text") }}
+                <b>{{ t("internal-bold") }}:</b> {{ t("threat-point-1") }}
+              </p>
+
+              <p class="mb-3 line-break-0">
+                <b>{{ t("exernal-bold") }}:</b> {{ t("threat-point-2") }}
               </p>
             </div>
           </div>
 
           <div class="mb-8">
             <v-row class="mb-1">
-              <v-col cols="2" lg="1" class="pe-0 pe-lg-3">
+              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
                 <v-sheet
                   rounded="circle"
                   class="text-h6 font-weight-medium d-flex justify-center align-center"
@@ -97,29 +94,29 @@
                   2
                 </v-sheet>
               </v-col>
-              <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium line-break-0">
-                  {{ t("information-protection") }}
+              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
+                <div class="deep-blue text-25 font-weight-bold line-break-0">
+                  {{ t("facility-information") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
               <p class="mb-3 line-break-0">
-                {{ t("information-text-1") }}
+                {{ t("facility-information-text") }}
               </p>
 
               <ul class="ps-5 line-break-0">
-                <li>{{ t("information-text-2") }}</li>
-                <li>{{ t("information-text-3") }}</li>
-                <li>{{ t("information-text-4") }}</li>
+                <li>{{ t("facility-point-1") }}</li>
+                <li>{{ t("facility-point-2") }}</li>
+                <li>{{ t("facility-point-3") }}</li>
               </ul>
             </div>
           </div>
 
           <div class="mb-8">
             <v-row class="mb-1">
-              <v-col cols="2" lg="1" class="pe-0 pe-lg-3">
+              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
                 <v-sheet
                   rounded="circle"
                   class="text-h6 font-weight-medium d-flex justify-center align-center"
@@ -130,32 +127,30 @@
                   3
                 </v-sheet>
               </v-col>
-              <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium line-break-0">
-                  {{ t("asset-protection") }}
+              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
+                <div class="deep-blue text-25 font-weight-bold line-break-0">
+                  {{ t("asset-safety") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
               <p class="mb-3 line-break-0">
-                {{ t("asset-text-2") }}
+                {{ t("asset-safety-text") }}
               </p>
 
               <ul class="ps-5 line-break-0">
-                <li>{{ t("asset-text-3") }}</li>
-                <li>{{ t("asset-text-4") }}</li>
-                <li>
-                  {{ t("asset-text-5") }}
-                </li>
+                <li>{{ t("asset-point-1") }}</li>
+                <li>{{ t("asset-point-2") }}</li>
+                <li>{{ t("asset-point-3") }}</li>
               </ul>
             </div>
           </div>
         </v-col>
-        <v-col cols="12" lg="6">
+        <v-col cols="12" md="6" lg="6">
           <div class="mb-8">
             <v-row class="mb-1">
-              <v-col cols="2" lg="1" class="pe-0 pe-lg-3">
+              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
                 <v-sheet
                   rounded="circle"
                   class="text-h6 font-weight-medium d-flex justify-center align-center"
@@ -166,18 +161,22 @@
                   4
                 </v-sheet>
               </v-col>
-              <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium line-break-0">
-                  {{ t("analysis") }}
+              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
+                <div class="deep-blue text-25 font-weight-bold line-break-0">
+                  {{ t("analysis-improvement") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
+              <p class="mb-3 line-break-0">
+                {{ t("analysis-improvement-text") }}
+              </p>
+
               <ul class="ps-5 line-break-0">
-                <li>{{ t("analysis-text") }}</li>
+                <li>{{ t("analysis-point-1") }}</li>
                 <li>
-                  {{ t("analysis-text-2") }}
+                  {{ t("analysis-point-2") }}
                 </li>
               </ul>
             </div>
@@ -185,7 +184,7 @@
 
           <div class="mb-8">
             <v-row class="mb-1">
-              <v-col cols="2" lg="1" class="pe-0 pe-lg-3">
+              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
                 <v-sheet
                   rounded="circle"
                   class="text-h6 font-weight-medium d-flex justify-center align-center"
@@ -196,22 +195,30 @@
                   5
                 </v-sheet>
               </v-col>
-              <v-col cols="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-medium line-break-0">
-                  {{ t("risk-management") }}
+              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
+                <div class="deep-blue text-25 font-weight-bold line-break-0">
+                  {{ t("risk-based") }}
                 </div>
               </v-col>
             </v-row>
 
             <div class="sub-text">
-              <ul class="ps-5 line-break-0">
+              <p class="mb-3 line-break-0">
+                {{ t("risk-based-text") }}
+              </p>
+
+              <ul class="ps-5 line-break-0 mb-3">
                 <li>
-                  {{ t("risk-management-text") }}
+                  {{ t("risk-point-1") }}
                 </li>
                 <li>
-                  {{ t("risk-management-2") }}
+                  {{ t("risk-point-2") }}
                 </li>
               </ul>
+
+              <p class="mb-3 line-break-0">
+                {{ t("risk-based-end") }}
+              </p>
             </div>
           </div>
         </v-col>
@@ -221,16 +228,18 @@
     <v-container fluid class="grey-section py-16">
       <v-container max-width="1100">
         <v-row>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" md="6" lg="6">
             <v-row>
               <v-col cols="12" lg="10">
-                <div class="text-36 deep-blue font-weight-bold line-break-0">
+                <div
+                  class="text-36 deep-blue text-sm-center font-weight-bold line-break-0"
+                >
                   {{ t("service-goals") }}
                 </div>
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" lg="6" class="sub-text">
+          <v-col cols="12" md="6" lg="6" class="sub-text">
             <p class="font-weight-bold mb-5 line-break-0">
               {{ t("service-goals-bold") }}
             </p>

@@ -1,7 +1,7 @@
-<template>
-  <v-container max-width="1200" class="py-lg-16">
-    <v-row align="center" class="mb-16">
-      <v-col cols="12" lg="6" class="pt-10">
+  <template>
+  <v-container max-width="1200" class="mt-5 pt-16 px-sm-5 px-md-10 py-lg-16">
+    <v-row align="center" class="mb-16 mt-md-16">
+      <v-col cols="12" sm="6" md="6" lg="6" class="pt-10">
         <div class="text-h3 font-weight-bold mb-5 line-break-0">
           {{ t("Contact an expert") }}
         </div>
@@ -66,7 +66,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" class="bg-grey-lighten-5 pa-lg-5" lg="6">
+      <v-col cols="12" class="bg-grey-lighten-5 pa-lg-5" sm="6" md="6" lg="6">
         <div class="text-36 font-weight-medium mb-5 line-break-0">
           {{ t("need-help") }}
         </div>

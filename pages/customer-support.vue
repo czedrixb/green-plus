@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Customer support" />
 
-    <v-container max-width="1200" class="pt-10">
+    <v-container max-width="1200" class="px-md-8 pt-10">
       <v-row justify="center" class="mb-8">
         <v-col cols="12" lg="10">
           <p class="sub-text text-center line-break-0">
@@ -12,7 +12,7 @@
       </v-row>
 
       <v-row justify="center" class="d-flex align-stetch" no-gutters>
-        <v-col cols="12" lg="6" class="pa-1">
+        <v-col cols="12" sm="6" md="6" lg="6" class="pa-1">
           <v-card class="bg-support-card pa-5" elevation="0" rounded="lg">
             <v-card-text class="text-white">
               <p
@@ -39,7 +39,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="6" class="d-flex pa-1">
+        <v-col cols="12" sm="6" md="6" lg="6" class="d-flex pa-1">
           <v-card class="bg-support-card pa-5" elevation="0" rounded="lg">
             <v-card-text class="text-white">
               <p
@@ -87,7 +87,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="6" class="pa-1">
+        <v-col cols="12" sm="6" md="6" lg="6" class="pa-1">
           <v-card class="bg-support-card pa-5" elevation="0" rounded="lg">
             <v-card-text class="text-white">
               <p
@@ -129,7 +129,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="6" class="d-flex pa-1">
+        <v-col cols="12" sm="6" md="6" lg="6" class="d-flex pa-1">
           <v-card class="bg-support-card pa-5" elevation="0" rounded="lg">
             <v-card-text class="text-white">
               <p
@@ -164,14 +164,11 @@
     <CustomerReviews />
 
     <v-container fluid>
-      <v-container max-width="1100" class="py-15">
+      <v-container max-width="1200" class="py-15">
         <v-row align="center">
-          <v-col cols="12" lg="6" class="pt-10">
-            <div class="text-h3 font-weight-bold line-break-0">
+          <v-col cols="12" sm="6" md="6" lg="6" class="pt-10">
+            <div class="text-h3 font-weight-bold line-break-0 mb-5">
               {{ t("do-today") }}
-            </div>
-            <div class="text-h3 font-weight-bold mb-5 line-break-0">
-              {{ t("lmk") }}
             </div>
 
             <div class="sub-text">
@@ -179,7 +176,7 @@
               <p class="line-break-0">{{ t("committed-providing") }}</p>
             </div>
           </v-col>
-          <v-col cols="12" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6">
             <v-form v-model="valid">
               <v-container>
                 <v-row>

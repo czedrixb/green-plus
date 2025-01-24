@@ -1,9 +1,9 @@
 <template>
   <div>
-    <SectionHeader title="Business area" />
+    <SectionHeader title="Business area" class="mb-md-8" />
 
-    <v-container max-width="1100" class="py-10 mb-10">
-      <v-row justify="center" class="mb-8">
+    <v-container max-width="1100" class="px-md-10 py-10">
+      <v-row justify="center" class="mb-15">
         <v-col cols="12" lg="10">
           <p class="sub-text text-center line-break-0">
             {{ t("business-area-text") }}
@@ -11,8 +11,14 @@
         </v-col>
       </v-row>
 
-      <v-row class="mb-5" align="center">
-        <v-col cols="12" lg="6" class="order-2 order-lg-1">
+      <v-row class="mb-15" align="center">
+        <v-col
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+          class="order-2 order-sm-1 order-md-1 order-lg-1"
+        >
           <p
             class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
           >
@@ -34,8 +40,10 @@
           </div>
         </v-col>
         <v-col
-          class="d-flex justify-center justify-lg-end order-1 order-lg-2"
+          class="d-flex justify-center justify-lg-end order-1 order-md-2 order-lg-2"
           cols="12"
+          sm="6"
+          md="6"
           lg="6"
         >
           <v-img
@@ -48,8 +56,8 @@
         </v-col>
       </v-row>
 
-      <v-row class="mb-5" align="center">
-        <v-col cols="12" lg="6">
+      <v-row class="mb-15" align="center">
+        <v-col cols="12" sm="6" md="6" lg="6">
           <v-img
             src="/images/business-areas/security-management.png"
             cover
@@ -58,7 +66,7 @@
             class="img-responsive-80"
           ></v-img>
         </v-col>
-        <v-col cols="12" lg="6">
+        <v-col cols="12" sm="6" md="6" lg="6">
           <p
             class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
           >
@@ -80,8 +88,14 @@
         </v-col>
       </v-row>
 
-      <v-row class="mb-5" align="center">
-        <v-col cols="12" lg="6" class="order-2 order-lg-1">
+      <v-row class="mb-15" align="center">
+        <v-col
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+          class="order-2 order-sm-1 order-md-1 order-lg-1"
+        >
           <p
             class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
           >
@@ -104,8 +118,10 @@
           </div>
         </v-col>
         <v-col
-          class="d-flex justify-lg-end order-1 order-lg-2"
+          class="d-flex justify-lg-end order-1 order-md-2 order-lg-2"
           cols="12"
+          sm="6"
+          md="6"
           lg="6"
         >
           <v-img
@@ -118,8 +134,8 @@
         </v-col>
       </v-row>
 
-      <v-row class="mb-5" align="center">
-        <v-col cols="12" lg="6">
+      <v-row class="mb-15" align="center">
+        <v-col cols="12" sm="6" md="6" lg="6">
           <v-img
             src="/images/business-areas/parking-management.png"
             cover
@@ -128,7 +144,7 @@
             class="img-responsive-80"
           ></v-img>
         </v-col>
-        <v-col cols="12" lg="6">
+        <v-col cols="12" sm="6" md="6" lg="6">
           <p
             class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
           >
@@ -154,8 +170,14 @@
         </v-col>
       </v-row>
 
-      <v-row class="mb-5" align="center">
-        <v-col cols="12" lg="6" class="order-2 order-lg-1">
+      <v-row class="mb-15" align="center">
+        <v-col
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+          class="order-2 order-sm-1 order-md-1 order-lg-1"
+        >
           <p
             class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
           >
@@ -178,8 +200,10 @@
           </div>
         </v-col>
         <v-col
-          class="d-flex justify-lg-end order-1 order-lg-2"
+          class="d-flex justify-lg-end order-1 order-md-2 order-lg-2"
           cols="12"
+          sm="6"
+          md="6"
           lg="6"
         >
           <v-img

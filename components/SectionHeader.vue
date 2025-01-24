@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="px-0 py-0">
-    <div class="bg-image py-lg-5">
-      <div class="banner-title font-weight-medium text-white text-center py-16">
+    <div class="bg-image pt-15 pb-lg-10">
+      <div class="banner-title font-weight-bold text-white text-center py-16">
         {{ t(title) }}
       </div>
     </div>
