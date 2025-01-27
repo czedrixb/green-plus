@@ -319,6 +319,7 @@ useHead({
     { property: "og:title", content: staticMetaTitle },
     { property: "og:description", content: staticMetaDescription },
     { property: "og:type", content: "website" },
+    { property: "og:image", content: "/images/thumbnail.png" },
   ],
 });
 </script>
