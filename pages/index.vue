@@ -253,7 +253,7 @@
           </v-col>
         </v-row>
         <v-row align="center">
-          <v-col cols="12" sm="6" md="6" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6" class="order-2 order-lg-1">
             <div
               class="text-36 text-blue-darken-4 font-weight-bold mb-3 line-break-0"
             >
@@ -264,7 +264,7 @@
               {{ t("our-mission-text") }}
             </p>
           </v-col>
-          <v-col cols="12" sm="6" md="6" lg="6">
+          <v-col cols="12" sm="6" md="6" lg="6" class="order-1 order-lg-2">
             <v-img
               src="/images/homepage/our-mission.png"
               cover

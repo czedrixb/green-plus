@@ -12,7 +12,7 @@
               {{ t("ceo-message") }}
             </div>
 
-            <div class="sub-text mb-5">
+            <div class="sub-text mb-6">
               <p class="font-weight-bold line-break-0">
                 1. {{ t("providing-heartfelt") }}
               </p>
@@ -20,7 +20,7 @@
                 {{ t("providing-heartfelt-text") }}
               </p>
             </div>
-            <div class="sub-text mb-5">
+            <div class="sub-text mb-6">
               <p class="font-weight-bold line-break-0">
                 2. {{ t("professionalism-pursuit") }}
               </p>

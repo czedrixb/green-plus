@@ -120,6 +120,30 @@ div {
 }
 
 @media (max-width: 600px) {
+  .text-43 {
+    font-size: 35px;
+  }
+
+  .text-h4 {
+    font-size: 30px !important;
+  }
+
+  .text-h3 {
+    font-size: 30px !important;
+  }
+
+  .text-h5 {
+    font-size: 22px !important;
+  }
+
+  .text-36 {
+    font-size: 30px;
+  }
+
+  .banner-title {
+    font-size: 35px;
+  }
+
   .responsive-img {
     max-width: 100%;
     max-height: auto;
