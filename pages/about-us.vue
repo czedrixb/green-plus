@@ -67,8 +67,8 @@
         <p class="line-break-0">{{ t("management-philosophy") }}</p>
       </div>
 
-      <v-row>
-        <v-col cols="12" md="4" lg="4">
+      <v-row justify="center">
+        <v-col cols="12" sm="6" md="4" lg="4">
           <v-card
             class="px-4 py-3"
             rounded="lg"
@@ -85,7 +85,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4" lg="4">
+        <v-col cols="12" sm="6" md="4" lg="4">
           <v-card
             class="px-5 py-6"
             rounded="lg"
@@ -102,7 +102,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4" lg="4">
+        <v-col cols="12" sm="6" md="4" lg="4">
           <v-card
             class="px-5 py-6"
             rounded="lg"
@@ -194,6 +194,7 @@
           v-for="team in teams"
           :key="team.name"
           cols="12"
+          sm="6"
           md="4"
           lg="4"
           class="px-lg-10"

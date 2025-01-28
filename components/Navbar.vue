@@ -28,27 +28,28 @@
                 :to="link.to"
                 >{{ t(link.title) }}</NuxtLink
               >
-              <v-menu>
-                <template #activator="{ props }">
-                  <v-btn
-                    v-bind="props"
-                    elevation="0"
-                    color="blue-accent-4"
-                    class="text-capitalize font-weight-regular mx-2 px-0"
-                  >
-                    <v-icon>mdi-translate</v-icon>
-                  </v-btn>
-                </template>
-                <v-list>
-                  <v-list-item @click="changeLanguage('en')">
-                    <v-list-item-title>English</v-list-item-title>
-                  </v-list-item>
-                  <v-list-item @click="changeLanguage('ko')">
-                    <v-list-item-title>Korean</v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu>
             </div>
+
+            <v-menu>
+              <template #activator="{ props }">
+                <v-btn
+                  v-bind="props"
+                  elevation="0"
+                  color="blue-accent-4"
+                  class="text-capitalize font-weight-regular mx-2 px-0"
+                >
+                  <v-icon>mdi-translate</v-icon>
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click="changeLanguage('en')">
+                  <v-list-item-title>English</v-list-item-title>
+                </v-list-item>
+                <v-list-item @click="changeLanguage('ko')">
+                  <v-list-item-title>Korean</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </div>
         </v-container>
       </v-app-bar>
