@@ -72,7 +72,7 @@
 
 <script setup>
 import { ref } from "vue";
-import navLinks from "./navigation";
+// import navLinks from "./navigation";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 
@@ -93,6 +93,41 @@ const toggleDrawer = () => {
 const closeDrawer = () => {
   drawer.value = false;
 };
+
+const navLinks = [
+  {
+    title: "Home",
+    to: "/",
+  },
+  {
+    title: "About Us",
+    to: "/about-us",
+  },
+  {
+    title: "Business",
+    to: "/business",
+  },
+  {
+    title: "Customer Support",
+    to: "/customer-support",
+  },
+  {
+    title: "Key achievements",
+    to: "/key-achievements",
+  },
+  {
+    title: "Hiring",
+    to: "/careers",
+  },
+  {
+    title: "Security Consulting",
+    to: "/security-consulting",
+  },
+  {
+    title: "Contact",
+    to: "/contact-us",
+  },
+];
 </script>
 
 <style >
