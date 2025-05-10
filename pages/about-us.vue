@@ -46,7 +46,7 @@
           lg="6"
         >
           <v-img
-            src="/images/about-us/ceo-message.png"
+            src="/images/ai/about-us/ceo-message.png"
             cover
             max-width="100%"
             height="410"
@@ -104,7 +104,7 @@
         </v-col>
         <v-col cols="12" sm="6" md="4" lg="4">
           <v-card
-            class="px-5 py-6"
+            class="px-5 py-2"
             rounded="lg"
             elevation="0"
             color="blue-accent-4"
@@ -113,6 +113,7 @@
               <div class="text-h5 line-break-0">
                 3. {{ t("sustainability") }}
               </div>
+              <div class="text-h5 line-break-0">{{ t("responsibility") }}</div>
             </v-card-title>
             <v-card-text class="text-center">
               <p class="sub-text font-weight-regular line-break-0">
@@ -124,7 +125,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="py-10" max-width="1200">
+    <v-container class="pt-10 pb-16" max-width="1200">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 text-center mb-3 line-break-0"
       >
@@ -135,7 +136,7 @@
         {{ t("major-milestone-text") }}
       </p>
 
-      <v-row justify="center">
+      <v-row justify="center" class="pb-4">
         <v-col
           v-for="milestone in milestones"
           :key="milestone.date"
@@ -174,7 +175,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="px-md-10 py-13" max-width="1200">
+    <!-- <v-container class="px-md-10 py-13" max-width="1200">
       <div
         class="text-h3 font-weight-bold text-center text-blue-darken-4 mb-5 line-break-0"
       >
@@ -237,7 +238,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
   </div>
 </template>
 

@@ -22,7 +22,7 @@
       <v-row align="center">
         <v-col cols="12" sm="5" md="4" lg="4">
           <v-img
-            src="/images/careers/careers-img1.png"
+            src="/images/ai/careers/careers-img1.png"
             max-width="l00%"
             rounded="lg"
             height="286"
@@ -31,7 +31,7 @@
         </v-col>
         <v-col cols="12" sm="7" md="8" lg="8">
           <v-img
-            src="/images/careers/careers-img2.png"
+            src="/images/ai/careers/careers-img2.png"
             max-width="l00%"
             rounded="lg"
             height="286"

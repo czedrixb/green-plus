@@ -47,7 +47,7 @@
           lg="6"
         >
           <v-img
-            src="/images/business-areas/security-services.png"
+            src="/images/ai/business-areas/security-services.png"
             cover
             rounded="lg"
             height="350"
@@ -59,7 +59,7 @@
       <v-row class="mb-15" align="center">
         <v-col cols="12" sm="6" md="6" lg="6">
           <v-img
-            src="/images/business-areas/security-management.png"
+            src="/images/ai/business-areas/security-management.png"
             cover
             rounded="lg"
             height="350"
@@ -125,7 +125,7 @@
           lg="6"
         >
           <v-img
-            src="/images/business-areas/facility-management.png"
+            src="/images/ai/business-areas/facility-management.png"
             cover
             rounded="lg"
             height="350"
@@ -137,7 +137,7 @@
       <v-row class="mb-15" align="center">
         <v-col cols="12" sm="6" md="6" lg="6">
           <v-img
-            src="/images/business-areas/parking-management.png"
+            src="/images/ai/business-areas/parking-management.png"
             cover
             rounded="lg"
             height="350"
@@ -207,7 +207,7 @@
           lg="6"
         >
           <v-img
-            src="/images/business-areas/cleaning-service.png"
+            src="/images/ai/business-areas/cleaning-service.png"
             cover
             rounded="lg"
             height="350"
