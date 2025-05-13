@@ -40,8 +40,8 @@
               lg="5"
             >
               <img
-                src="/images/homepage/hero-image-1b.png"
-                class="overflow-visible move-image-left"
+                src="/images/ai/homepage/hero-image-1b.png"
+                class="overflow-visible img-hero"
               />
             </v-col>
           </v-row>
@@ -76,17 +76,24 @@
               </v-btn>
             </div>
           </v-col>
-          <v-col class="pe-lg-5 pt-8 pt-sm-0 overflow-hidden" cols="12" lg="6">
-            <v-img
+          <v-col class="pe-lg-5 pt-sm-0 overflow-hidden" cols="12" lg="6">
+            <!-- <v-img
               src="/images/homepage/hero-image-1b.png"
-              class="overflow-visible move-image-left"
-            ></v-img>
+              class="overflow-visible img-hero"
+            ></v-img> -->
+            <img
+              src="/images/ai/homepage/hero-image-1b.png"
+              class="overflow-visible img-hero"
+            />
           </v-col>
         </v-row>
       </v-container>
     </div>
 
-    <v-container fluid class="bg-blue-accent-4 text-white py-16">
+    <v-container
+      fluid
+      class="bg-blue-accent-4 text-white py-16 accent-container overflow-hidden"
+    >
       <v-container max-width="1100">
         <v-row align="center">
           <v-col cols="12" sm="6" md="6" lg="6">

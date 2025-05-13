@@ -114,6 +114,17 @@ div {
   width: 750px;
 }
 
+.img-hero {
+  width: 68%;
+  transform: translateY(12%) translateX(15%);
+}
+
+.accent-container {
+  position: relative;
+  margin-top: -3rem;
+  z-index: 10;
+}
+
 @media (max-width: 1100px) {
   .nav-link {
     font-size: 12px;
@@ -122,6 +133,11 @@ div {
   .move-image-left {
     transform: scale(1.3) translateX(-28%) translateY(24%);
     width: 514px;
+  }
+
+  .img-hero {
+    width: 100%;
+    transform: translateY(12%) translateX(-8%);
   }
 }
 
@@ -140,9 +156,23 @@ div {
   .move-image-left {
     transform: scale(1.2) translateX(-5%) translateY(15%);
   }
+
+  .img-hero {
+    width: 49%;
+    transform: translateY(8%) translateX(47%);
+  }
 }
 
 @media (max-width: 600px) {
+  .accent-container {
+    margin-top: -1rem;
+  }
+
+  .img-hero {
+    width: 65%;
+    transform: translateY(4%) translateX(26%);
+  }
+
   .text-43 {
     font-size: 35px;
   }
