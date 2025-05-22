@@ -20,7 +20,7 @@
       </v-row>
 
       <v-row align="center">
-        <v-col cols="12" sm="5" md="4" lg="4">
+        <v-col cols="12" sm="5" md="5" lg="5">
           <v-img
             src="/images/ai/careers/careers-img1.png"
             max-width="l00%"
@@ -29,7 +29,7 @@
             cover
           ></v-img>
         </v-col>
-        <v-col cols="12" sm="7" md="8" lg="8">
+        <v-col cols="12" sm="7" md="7" lg="7">
           <v-img
             src="/images/ai/careers/careers-img2.png"
             max-width="l00%"
