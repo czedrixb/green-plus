@@ -25,7 +25,7 @@
             src="/images/ai/careers/careers-img1.png"
             max-width="l00%"
             rounded="lg"
-            height="286"
+            height="400"
             cover
           ></v-img>
         </v-col>
@@ -34,7 +34,7 @@
             src="/images/ai/careers/careers-img2.png"
             max-width="l00%"
             rounded="lg"
-            height="286"
+            height="400"
             cover
           ></v-img>
         </v-col>
