@@ -3,7 +3,7 @@
     <div class="d-none d-lg-block d-md-block">
       <v-parallax>
         <v-container class="pb-0 pt-16" max-width="1200">
-          <v-row align="center" class="pb-10">
+          <v-row align="center" class="py-10">
             <v-col
               cols="12"
               class="overflow-hidden py-md-10 py-lg-2"
@@ -11,15 +11,23 @@
               lg="7"
             >
               <div>
-                <div
-                  class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-5"
-                >
-                  {{ t("hero-big") }}
-                </div>
+                <v-row>
+                  <v-col cols="12" md="12">
+                    <div
+                      class="text-43 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-5"
+                    >
+                      {{ t("hero-big") }}
+                    </div>
+                  </v-col>
+                </v-row>
 
-                <div class="sub-text mb-5 line-break-0">
-                  {{ t("hero-small") }}
-                </div>
+                <v-row>
+                  <v-col cols="12" md="10">
+                    <div class="sub-text mb-5 line-break-0">
+                      {{ t("hero-small") }}
+                    </div>
+                  </v-col>
+                </v-row>
 
                 <v-btn
                   to="/contact-us"
@@ -40,8 +48,8 @@
               lg="5"
             >
               <img
-                src="/images/ai/homepage/hero-image-1b.png"
-                class="overflow-visible img-hero"
+                src="/images/version2/homepage/hero-image-1b.png"
+                class="overflow-visible move-image-left"
               />
             </v-col>
           </v-row>
@@ -76,24 +84,17 @@
               </v-btn>
             </div>
           </v-col>
-          <v-col class="pe-lg-5 pt-sm-0 overflow-hidden" cols="12" lg="6">
-            <!-- <v-img
-              src="/images/homepage/hero-image-1b.png"
-              class="overflow-visible img-hero"
-            ></v-img> -->
-            <img
-              src="/images/ai/homepage/hero-image-1b.png"
-              class="overflow-visible img-hero"
-            />
+          <v-col class="pe-lg-5 pt-8 pt-sm-0 overflow-hidden" cols="12" lg="6">
+            <v-img
+              src="/images/version2/homepage/hero-image-1b.png"
+              class="overflow-visible move-image-left"
+            ></v-img>
           </v-col>
         </v-row>
       </v-container>
     </div>
 
-    <v-container
-      fluid
-      class="bg-blue-accent-4 text-white py-16 accent-container overflow-hidden"
-    >
+    <v-container fluid class="bg-blue-accent-4 text-white py-16">
       <v-container max-width="1100">
         <v-row align="center">
           <v-col cols="12" sm="6" md="6" lg="6">
@@ -130,7 +131,7 @@
                 rounded="lg"
               ></v-img> -->
               <v-img
-                src="/images/ai/homepage/green-plus.png"
+                src="/images/homepage/green-plus.png"
                 cover
                 max-width="100%"
                 height="450"
@@ -159,7 +160,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/ai/homepage/professional-security.png"
+                src="/images/homepage/professional-security.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -182,7 +183,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/ai/homepage/deploy-skilled.png"
+                src="/images/homepage/deploy-skilled.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -205,7 +206,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/ai/homepage/efficient-facilities.png"
+                src="/images/homepage/efficient-facilities.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -228,7 +229,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/ai/homepage/innovation-system.png"
+                src="/images/homepage/innovation-system.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -256,7 +257,7 @@
         <v-row class="mb-8" align="center">
           <v-col cols="12" sm="6" md="6" lg="6">
             <v-img
-              src="/images/ai/homepage/our-vision.png"
+              src="/images/homepage/our-vision.png"
               cover
               max-width="95%"
               rounded="lg"
@@ -290,7 +291,7 @@
           </v-col>
           <v-col cols="12" sm="6" md="6" lg="6" class="order-1 order-lg-2">
             <v-img
-              src="/images/ai/homepage/our-mission.png"
+              src="/images/homepage/our-mission.png"
               cover
               max-width="95%"
               height="405"

@@ -1,299 +1,197 @@
 <template>
   <div>
-    <SectionHeader title="Security consulting" />
+    <SectionHeader title="Security Consulting" class="mb-md-8" />
 
-    <v-container fluid class="grey-section py-16 mb-8">
-      <v-container max-width="1100">
-        <v-row>
-          <v-col cols="12" md="6" lg="6">
-            <v-row>
-              <v-col cols="12" lg="10">
-                <div
-                  class="text-36 deep-blue text-sm-center font-weight-bold line-break-0"
-                >
-                  {{ t("our-mission") }}
+    <v-container max-width="1300" class="px-md-5 py-10">
+      <p class="sub-text line-break-0 mb-15">
+        {{ t("business-partner") }}
+      </p>
+      <div class="position-relative">
+        <v-row justify="center">
+          <v-col
+            v-for="item in securityItems"
+            :key="item.title"
+            class="px-md-15 mb-5"
+            cols="12"
+            sm="6"
+            lg="4"
+          >
+            <div>
+              <div class="d-flex justify-center">
+                <div class="img-card">
+                  <v-img
+                    :src="item.image"
+                    cover
+                    rounded="lg"
+                    :alt="item.title"
+                    class="img-card"
+                  ></v-img>
                 </div>
-              </v-col>
-            </v-row>
-          </v-col>
-          <v-col cols="12" md="6" lg="6" class="sub-text">
-            <div class="mb-5">
-              <p class="line-break-0">
-                <span class="font-weight-bold"
-                  >{{ t("ensuring-corporate-bold") }}:</span
+              </div>
+
+              <div class="text-center my-10">
+                <p
+                  class="text-h5 font-weight-semibold text-blue-darken-4 mb-5 line-break-0"
                 >
-                {{ t("ensuring-corporate-text") }}
-              </p>
-              <p class="line-break-0">{{ t("protect") }}</p>
+                  {{ t(item.title) }}
+                </p>
+              </div>
+
+              <div class="sub-text">
+                <p
+                  v-for="(content, index) in item.contents"
+                  :key="index"
+                  class="line-break-0 mb-8"
+                >
+                  {{ t(content) }}
+                </p>
+              </div>
             </div>
-
-            <p class="line-break-0">
-              <span class="font-weight-bold"
-                >{{ t("maintaining-business-bold") }}:</span
-              >
-              {{ t("maintaining-business-text") }}
-            </p>
-            <p class="line-break-0">{{ t("protect-operations") }}</p>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-container>
-
-    <v-container class="px-sm-8 px-md-10 py-15" max-width="1100">
-      <div class="text-36 deep-blue font-weight-bold mb-8 line-break-0">
-        {{ t("core-management") }}
-      </div>
-
-      <v-row>
-        <v-col cols="12" md="6" lg="6">
-          <div class="mb-8">
-            <v-row class="mb-1">
-              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
-                <v-sheet
-                  rounded="circle"
-                  class="text-h6 font-weight-medium d-flex justify-center align-center"
-                  color="blue-darken-4"
-                  height="32"
-                  width="32"
-                >
-                  1
-                </v-sheet>
-              </v-col>
-              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-bold line-break-0">
-                  {{ t("threat-identity") }}
-                </div>
-              </v-col>
-            </v-row>
-
-            <div class="sub-text">
-              <p class="mb-3 line-break-0">
-                {{ t("threat-identity-text") }}
-              </p>
-
-              <p class="mb-3 line-break-0">
-                <b>{{ t("internal-bold") }}:</b> {{ t("threat-point-1") }}
-              </p>
-
-              <p class="mb-3 line-break-0">
-                <b>{{ t("exernal-bold") }}:</b> {{ t("threat-point-2") }}
-              </p>
-            </div>
-          </div>
-
-          <div class="mb-8">
-            <v-row class="mb-1">
-              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
-                <v-sheet
-                  rounded="circle"
-                  class="text-h6 font-weight-medium d-flex justify-center align-center"
-                  color="blue-darken-4"
-                  height="32"
-                  width="32"
-                >
-                  2
-                </v-sheet>
-              </v-col>
-              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-bold line-break-0">
-                  {{ t("facility-information") }}
-                </div>
-              </v-col>
-            </v-row>
-
-            <div class="sub-text">
-              <p class="mb-3 line-break-0">
-                {{ t("facility-information-text") }}
-              </p>
-
-              <ul class="ps-5 line-break-0">
-                <li>{{ t("facility-point-1") }}</li>
-                <li>{{ t("facility-point-2") }}</li>
-                <li>{{ t("facility-point-3") }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mb-8">
-            <v-row class="mb-1">
-              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
-                <v-sheet
-                  rounded="circle"
-                  class="text-h6 font-weight-medium d-flex justify-center align-center"
-                  color="blue-darken-4"
-                  height="32"
-                  width="32"
-                >
-                  3
-                </v-sheet>
-              </v-col>
-              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-bold line-break-0">
-                  {{ t("asset-safety") }}
-                </div>
-              </v-col>
-            </v-row>
-
-            <div class="sub-text">
-              <p class="mb-3 line-break-0">
-                {{ t("asset-safety-text") }}
-              </p>
-
-              <ul class="ps-5 line-break-0">
-                <li>{{ t("asset-point-1") }}</li>
-                <li>{{ t("asset-point-2") }}</li>
-                <li>{{ t("asset-point-3") }}</li>
-              </ul>
-            </div>
-          </div>
-        </v-col>
-        <v-col cols="12" md="6" lg="6">
-          <div class="mb-8">
-            <v-row class="mb-1">
-              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
-                <v-sheet
-                  rounded="circle"
-                  class="text-h6 font-weight-medium d-flex justify-center align-center"
-                  color="blue-darken-4"
-                  height="32"
-                  width="32"
-                >
-                  4
-                </v-sheet>
-              </v-col>
-              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-bold line-break-0">
-                  {{ t("analysis-improvement") }}
-                </div>
-              </v-col>
-            </v-row>
-
-            <div class="sub-text">
-              <p class="mb-3 line-break-0">
-                {{ t("analysis-improvement-text") }}
-              </p>
-
-              <ul class="ps-5 line-break-0">
-                <li>{{ t("analysis-point-1") }}</li>
-                <li>
-                  {{ t("analysis-point-2") }}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mb-8">
-            <v-row class="mb-1">
-              <v-col cols="2" sm="1" md="2" lg="1" class="pe-0 pe-lg-3">
-                <v-sheet
-                  rounded="circle"
-                  class="text-h6 font-weight-medium d-flex justify-center align-center"
-                  color="blue-darken-4"
-                  height="32"
-                  width="32"
-                >
-                  5
-                </v-sheet>
-              </v-col>
-              <v-col cols="10" sm="11" md="10" lg="11" class="ps-0 ps-lg-3">
-                <div class="deep-blue text-25 font-weight-bold line-break-0">
-                  {{ t("risk-based") }}
-                </div>
-              </v-col>
-            </v-row>
-
-            <div class="sub-text">
-              <p class="mb-3 line-break-0">
-                {{ t("risk-based-text") }}
-              </p>
-
-              <ul class="ps-5 line-break-0 mb-3">
-                <li>
-                  {{ t("risk-point-1") }}
-                </li>
-                <li>
-                  {{ t("risk-point-2") }}
-                </li>
-              </ul>
-
-              <p class="mb-3 line-break-0">
-                {{ t("risk-based-end") }}
-              </p>
-            </div>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <v-container fluid class="grey-section py-16">
-      <v-container max-width="1100">
-        <v-row>
-          <v-col cols="12" md="6" lg="6">
-            <v-row>
-              <v-col cols="12" lg="10">
-                <div
-                  class="text-36 deep-blue text-sm-center font-weight-bold line-break-0"
-                >
-                  {{ t("service-goals") }}
-                </div>
-              </v-col>
-            </v-row>
-          </v-col>
-          <v-col cols="12" md="6" lg="6" class="sub-text">
-            <p class="font-weight-bold mb-5 line-break-0">
-              {{ t("service-goals-bold") }}
-            </p>
-
-            <p class="mb-5 line-break-0">
-              <span class="font-weight-bold"
-                >{{ t("service-goals-bold-2") }}:</span
-              >
-              {{ t("service-goals-text") }}
-            </p>
-
-            <p class="line-break-0">
-              <span class="font-weight-bold"
-                >{{ t("service-goals-bold-3") }}:</span
-              >
-              {{ t("service-goals-text-2") }}
-            </p>
           </v-col>
         </v-row>
-      </v-container>
-    </v-container>
-
-    <v-container fluid class="bg-blue-accent-4 py-15">
-      <v-container max-width="1100" class="text-white text-center">
-        <div class="text-h4 mb-5 font-weight-medium line-break-0">
-          {{ t("cooperate-us") }}
+        <div
+          class="position-absolute d-none d-lg-block outline-background"
+          style="max-width: 100%; width: 100%"
+        >
+          <v-img
+            src="/images/version2/security-consulting/outline-background.png"
+            cover
+          ></v-img>
         </div>
 
-        <p class="text-h6 font-weight-regular mb-5 line-break-0">
-          {{ t("cooperate-text") }}
-        </p>
+        <div class="position-absolute d-none d-lg-block arrow-1">
+          <v-img
+            src="/images/version2/security-consulting/arrow.png"
+            cover
+            width="30px"
+          ></v-img>
+        </div>
 
-        <v-btn
-          to="/contact-us"
-          elevation="0"
-          color="white"
-          size="x-large"
-          class="text-blue-accent-4 text-none font-weight-bold"
-          rounded="lg"
+        <div class="position-absolute d-none d-lg-block arrow-2">
+          <v-img
+            src="/images/version2/security-consulting/arrow.png"
+            cover
+            width="30px"
+          ></v-img>
+        </div>
+
+        <div
+          class="position-absolute d-none d-lg-block title-outline"
+          style="max-width: 100%; width: 100%"
         >
-          {{ t("consultation-request") }}
-        </v-btn>
+          <v-img
+            src="/images/version2/security-consulting/title-outline.png"
+            cover
+          ></v-img>
+        </div>
+      </div>
+    </v-container>
+
+    <v-container fluid style="background: #f9fbfd">
+      <v-container max-width="1300" class="px-md-5 pb-16 mt-8">
+        <v-row justify="center">
+          <v-col
+            v-for="security in securityServices"
+            :key="security.title"
+            cols="12"
+            lg="6"
+          >
+            <div class="px-3 py-5 policy-card">
+              <div class="d-flex justify-center">
+                <div>
+                  <v-img
+                    :src="security.image"
+                    cover
+                    width="124px"
+                    height="124px"
+                    rounded="lg"
+                    alt="customer-oriented"
+                  ></v-img>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <p
+                  class="text-h5 font-weight-semibold text-blue-darken-4 mb-5 line-break-0"
+                >
+                  {{ t(security.title) }}
+                </p>
+
+                <div class="sub-text">
+                  <p
+                    v-for="(content, index) in security.contents"
+                    :key="index"
+                    class="line-break-0"
+                  >
+                    {{ t(content) }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
       </v-container>
     </v-container>
+
+    <PartnerContact />
   </div>
 </template>
 
 <script setup>
 import { useHead } from "@vueuse/head";
+import milestones from "@/milestones";
+import teams from "@/team";
 import { useI18n } from "vue-i18n";
+
+const securityItems = [
+  {
+    image: "/images/version2/security-consulting/risk-analysis.png",
+    title: "risk-analysis",
+    contents: ["risk-analysis-text-1", "risk-analysis-text-2"],
+  },
+  {
+    image:
+      "/images/version2/security-consulting/countermeasure-development-1.png",
+    title: "contermeasure-development",
+    contents: [
+      "contermeasure-development-text-1",
+      "contermeasure-development-text-2",
+    ],
+  },
+  {
+    image: "/images/version2/security-consulting/implementation-support.png",
+    title: "implementation-support",
+    contents: ["implementation-support-text-1"],
+  },
+];
+
+const securityServices = [
+  {
+    image: "/images/version2/security-consulting/asset-protection.png",
+    title: "asset-protect",
+    contents: ["asset-protect-1", "asset-protect-2"],
+  },
+  {
+    image: "/images/version2/security-consulting/effective-analysis-1.png",
+    title: "effectivess-analysis",
+    contents: ["effectivess-analysis-1", "effectivess-analysis-2"],
+  },
+  {
+    image: "/images/version2/security-consulting/effective-analysis-2.png",
+    title: "effectivess-analysis",
+    contents: ["effectivess-analysis-3", "effectivess-analysis-4"],
+  },
+  {
+    image:
+      "/images/version2/security-consulting/countermeasure-development-2.png",
+    title: "contermeasure-development",
+    contents: ["countermeasure-develop-1", "countermeasure-develop-2"],
+  },
+];
 
 const { t } = useI18n();
 
-const staticMetaTitle = t("seo-security");
+const staticMetaTitle = t("seo-about");
 const staticMetaDescription = t("seo-description");
 const staticMetaKeywords = [
   t("seo-key-1"),
@@ -323,3 +221,17 @@ useHead({
   ],
 });
 </script>
+
+<style scoped>
+.v-card--variant-outlined {
+  border: thin solid rgb(196 196 196 / 87%);
+}
+
+.img-placeholder {
+  height: 13rem;
+}
+
+.policy-card {
+  min-height: 22rem;
+}
+</style>

@@ -17,17 +17,44 @@
             <v-spacer />
 
             <div class="d-none d-md-flex align-center">
-              <NuxtLink
-                class="nav-link mx-2"
-                :class="{
-                  'text-decoration-none': route.path !== link.to,
-                  'text-black': true,
-                }"
-                v-for="link in navLinks"
-                :key="link.title"
-                :to="link.to"
-                >{{ t(link.title) }}</NuxtLink
-              >
+              <template v-for="link in navLinks" :key="link.title">
+                <NuxtLink
+                  v-if="!link.children"
+                  class="nav-link mx-2"
+                  :class="{
+                    'text-decoration-none': route.path !== link.to,
+                    'text-black': true,
+                  }"
+                  :to="link.to"
+                >
+                  {{ t(link.title) }}
+                </NuxtLink>
+
+                <v-menu v-else open-on-hover>
+                  <template v-slot:activator="{ props }">
+                    <v-btn
+                      v-bind="props"
+                      class="nav-link mx-2 text-black text-capitalize"
+                      style="letter-spacing: 0"
+                      variant="text"
+                    >
+                      {{ t(link.title) }}
+                      <v-icon>mdi-chevron-down</v-icon>
+                    </v-btn>
+                  </template>
+                  <v-list>
+                    <v-list-item
+                      v-for="child in link.children"
+                      :key="child.title"
+                      :to="child.to"
+                    >
+                      <v-list-item-title>{{
+                        t(child.title)
+                      }}</v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </template>
             </div>
 
             <v-menu>
@@ -56,14 +83,27 @@
 
       <v-navigation-drawer v-model="drawer" app temporary class="d-md-none">
         <v-list>
-          <v-list-item
-            v-for="link in navLinks"
-            :key="link.title"
-            :to="link.to"
-            @click="closeDrawer"
-          >
-            <v-list-item-title>{{ t(link.title) }}</v-list-item-title>
-          </v-list-item>
+          <template v-for="link in navLinks" :key="link.title">
+            <v-list-group v-if="link.children" :value="link.title">
+              <template v-slot:activator="{ props }">
+                <v-list-item
+                  v-bind="props"
+                  :title="t(link.title)"
+                ></v-list-item>
+              </template>
+              <v-list-item
+                v-for="child in link.children"
+                :key="child.title"
+                :to="child.to"
+                @click="closeDrawer"
+              >
+                <v-list-item-title>{{ t(child.title) }}</v-list-item-title>
+              </v-list-item>
+            </v-list-group>
+            <v-list-item v-else :to="link.to" @click="closeDrawer">
+              <v-list-item-title>{{ t(link.title) }}</v-list-item-title>
+            </v-list-item>
+          </template>
         </v-list>
       </v-navigation-drawer>
     </v-app>
@@ -72,7 +112,6 @@
 
 <script setup>
 import { ref } from "vue";
-// import navLinks from "./navigation";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 
@@ -102,10 +141,24 @@ const navLinks = [
   {
     title: "About Us",
     to: "/about-us",
+    children: [
+      {
+        title: "Greetings",
+        to: "/greetings",
+      },
+      {
+        title: "Company Overview",
+        to: "/company-overview",
+      },
+      {
+        title: "Organizational Structure",
+        to: "/organizational-structure",
+      },
+    ],
   },
   {
-    title: "Business",
-    to: "/business",
+    title: "Business Areas",
+    to: "/business-areas",
   },
   {
     title: "Customer Support",
@@ -130,8 +183,14 @@ const navLinks = [
 ];
 </script>
 
-<style >
+<style>
 .v-application__wrap {
   min-height: 0;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
 }
 </style>
