@@ -1,9 +1,9 @@
 <template>
   <v-container fluid class="bg-white py-16">
     <v-container class="px-0" max-width="1100">
-      <!-- <div class="text-center text-h3 font-weight-bold mb-8">
+      <div class="text-center text-h3 font-weight-bold mb-8">
         {{ t("faqs") }}
-      </div> -->
+      </div>
 
       <v-expansion-panels rounded="lg" elevation="0" bg-color="grey-lighten-3">
         <v-expansion-panel v-for="faq in faqs" :key="faq.question">
