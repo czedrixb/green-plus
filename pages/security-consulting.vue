@@ -133,6 +133,31 @@
       </v-container>
     </v-container>
 
+    <v-container fluid class="px-5 pt-10 pb-15">
+      <div class="text-h4 text-blue-darken-4 text-center line-break-0 mb-10">
+        {{ t("Sk Shields Agency") }}
+      </div>
+      <v-container max-width="1300" class="bg-sk px-md-10 py-16 mb-10">
+        <v-row justify="center">
+          <v-col
+            v-for="item in items"
+            :key="item.title"
+            cols="12"
+            sm="6"
+            lg="3"
+          >
+            <div class="title-sk text-center py-2 mb-9">
+              <p class="text-h5 font-weight-semibold line-break-0">
+                {{ t(item.title) }}
+              </p>
+            </div>
+
+            <v-img :src="item.image" cover :alt="item.title"></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-container>
+
     <PartnerContact />
   </div>
 </template>
@@ -186,6 +211,25 @@ const securityServices = [
       "/images/version2/security-consulting/countermeasure-development-2.png",
     title: "contermeasure-development",
     contents: ["countermeasure-develop-1", "countermeasure-develop-2"],
+  },
+];
+
+const items = [
+  {
+    image: "/images/version2/sk-shields/ai-cctv.png",
+    title: "ai-cctv",
+  },
+  {
+    image: "/images/version2/sk-shields/response-security.png",
+    title: "response-security",
+  },
+  {
+    image: "/images/version2/sk-shields/access-control.png",
+    title: "access-security",
+  },
+  {
+    image: "/images/version2/sk-shields/automated-parking.png",
+    title: "automated-park",
   },
 ];
 

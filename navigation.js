@@ -3,10 +3,10 @@ export default [
     title: "Home",
     to: "/",
   },
-  {
-    title: "About Us",
-    to: "/about-us",
-  },
+  // {
+  //   title: "About Us",
+  //   to: "/about-us",
+  // },
   {
     title: "Business",
     to: "/business",

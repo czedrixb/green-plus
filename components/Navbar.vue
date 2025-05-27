@@ -4,7 +4,7 @@
       <v-app-bar :elevation="0" app color="white" dark>
         <v-container class="ps-lg-0" max-width="1200">
           <div class="d-flex align-center">
-            <v-app-bar-nav-icon @click="toggleDrawer" class="d-md-none" />
+            <v-app-bar-nav-icon @click="toggleDrawer" class="d-lg-none" />
 
             <NuxtLink to="/">
               <v-img
@@ -16,7 +16,7 @@
 
             <v-spacer />
 
-            <div class="d-none d-md-flex align-center">
+            <div class="d-none d-lg-flex align-center">
               <template v-for="link in navLinks" :key="link.title">
                 <NuxtLink
                   v-if="!link.children"
@@ -81,7 +81,7 @@
         </v-container>
       </v-app-bar>
 
-      <v-navigation-drawer v-model="drawer" app temporary class="d-md-none">
+      <v-navigation-drawer v-model="drawer" app temporary class="d-lg-none">
         <v-list>
           <template v-for="link in navLinks" :key="link.title">
             <v-list-group v-if="link.children" :value="link.title">
