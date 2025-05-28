@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Announcements" />
 
-    <v-container max-width="1200" class="px-md-8 pt-10 my-13">
+    <v-container max-width="1400" class="px-md-8 pt-10 my-13">
       <v-row justify="center" class="mb-8">
         <v-col cols="12" lg="10">
           <p class="sub-text text-center line-break-0">

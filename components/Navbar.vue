@@ -2,7 +2,7 @@
   <div>
     <v-app>
       <v-app-bar :elevation="0" app color="white" dark>
-        <v-container class="ps-lg-0" max-width="1200">
+        <v-container class="ps-lg-0" max-width="1400">
           <div class="d-flex align-center">
             <v-app-bar-nav-icon @click="toggleDrawer" class="d-lg-none" />
 
@@ -159,6 +159,24 @@ const navLinks = [
   {
     title: "Business Areas",
     to: "/business-areas",
+    children: [
+      {
+        title: "security-services",
+        to: "/security-services",
+      },
+      {
+        title: "facility-manage",
+        to: "/facility-management",
+      },
+      {
+        title: "parking-manage",
+        to: "/parking-management",
+      },
+      {
+        title: "cleaning-manage",
+        to: "/cleaning-management",
+      },
+    ],
   },
   {
     title: "Customer Support",

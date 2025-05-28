@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Key achievements" />
 
-    <v-container max-width="1200" class="px-md-10 py-15 mb-5">
+    <v-container max-width="1400" class="px-md-10 py-15 mb-5">
       <v-row justify="center" class="mb-10">
         <v-col cols="12" lg="10">
           <div class="sub-text text-center">

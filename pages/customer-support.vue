@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Customer support" />
 
-    <v-container max-width="1200" class="px-md-8 pt-10">
+    <v-container max-width="1400" class="px-md-8 pt-10">
       <v-row justify="center" class="mb-8">
         <v-col cols="12" lg="10">
           <p class="sub-text text-center line-break-0">
@@ -164,7 +164,7 @@
     <CustomerReviews />
 
     <v-container fluid>
-      <v-container max-width="1200" class="py-15">
+      <v-container max-width="1400" class="py-15">
         <v-row align="center">
           <v-col cols="12" sm="6" md="6" lg="6" class="pt-10">
             <div class="text-h3 font-weight-bold line-break-0 mb-5">

@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="About Us" class="mb-md-8" />
 
-    <v-container max-width="1200" class="px-md-10 py-10">
+    <v-container max-width="1400" class="px-md-10 py-10">
       <v-row justify="space-between" align="center">
         <v-col cols="12" sm="6" md="6" lg="6" class="order-2 order-lg-1">
           <div>
@@ -56,7 +56,7 @@
       </v-row>
     </v-container>
 
-    <v-container max-width="1200" class="px-md-10 py-13">
+    <v-container max-width="1400" class="px-md-10 py-13">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 mb-5 line-break-0"
       >
@@ -125,7 +125,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="pt-10 pb-16" max-width="1200">
+    <v-container class="pt-10 pb-16" max-width="1400">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 text-center mb-3 line-break-0"
       >
@@ -175,7 +175,7 @@
       </v-row>
     </v-container>
 
-    <!-- <v-container class="px-md-10 py-13" max-width="1200">
+    <!-- <v-container class="px-md-10 py-13" max-width="1400">
       <div
         class="text-h3 font-weight-bold text-center text-blue-darken-4 mb-5 line-break-0"
       >

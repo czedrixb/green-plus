@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Contact Us" class="mb-md-8" />
 
-    <v-container max-width="1200" class="mt-5 pt-16 px-sm-5 px-md-10 py-lg-16">
+    <v-container max-width="1400" class="mt-5 pt-16 px-sm-5 px-md-10 py-lg-16">
       <v-row align="center" class="mb-16 mt-md-16">
         <v-col cols="12" sm="6" md="6" lg="6" class="pt-10">
           <div class="text-h3 font-weight-bold mb-5 line-break-0">
@@ -141,7 +141,7 @@
       <div class="overflow-hidden mb-5">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.8855181863396!2d127.02556567641425!3d37.274141740839625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b430a20764611%3A0xbd0835f3e94eaa53!2s72FH%2BM72%2C%20Suwon%2C%20Gyeonggi-do%2C%20South%20Korea!5e0!3m2!1sen!2sph!4v1736904098847!5m2!1sen!2sph"
-          width="1200"
+          width="1400"
           height="600"
           style="border: 0"
           allowfullscreen=""

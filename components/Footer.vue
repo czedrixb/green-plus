@@ -1,6 +1,6 @@
 <template>
   <div class="bg-footer text-white">
-    <v-container class="py-10" max-width="1200">
+    <v-container class="py-10" max-width="1400">
       <v-row>
         <v-col cols="12" md="3" lg="3">
           <v-img

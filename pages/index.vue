@@ -2,7 +2,7 @@
   <div>
     <div class="d-none d-lg-block d-md-block">
       <v-parallax>
-        <v-container class="pb-0 pt-16" max-width="1200">
+        <v-container class="pb-0 pt-16" max-width="1400">
           <v-row align="center" class="py-10">
             <v-col
               cols="12"
@@ -48,8 +48,8 @@
               lg="5"
             >
               <img
-                src="/images/version2/homepage/hero-image-1b.png"
-                class="overflow-visible move-image-left"
+                src="/images/ai/homepage/hero-image-1b.png"
+                class="overflow-visible img-hero"
               />
             </v-col>
           </v-row>
@@ -58,7 +58,7 @@
     </div>
 
     <div class="d-block d-md-none d-lg-none">
-      <v-container class="pb-3 pt-16" max-width="1200">
+      <v-container class="pb-3 pt-16" max-width="1400">
         <v-row align="center" class="pt-10 pb-0">
           <v-col cols="12" class="py-16 pb-5 pb-md-0" lg="6">
             <div>
@@ -86,15 +86,18 @@
           </v-col>
           <v-col class="pe-lg-5 pt-8 pt-sm-0 overflow-hidden" cols="12" lg="6">
             <v-img
-              src="/images/version2/homepage/hero-image-1b.png"
-              class="overflow-visible move-image-left"
+              src="/images/ai/homepage/hero-image-1b.png"
+              class="overflow-visible img-hero"
             ></v-img>
           </v-col>
         </v-row>
       </v-container>
     </div>
 
-    <v-container fluid class="bg-blue-accent-4 text-white py-16">
+    <v-container
+      fluid
+      class="bg-blue-accent-4 accent-container text-white py-16"
+    >
       <v-container max-width="1100">
         <v-row align="center">
           <v-col cols="12" sm="6" md="6" lg="6">

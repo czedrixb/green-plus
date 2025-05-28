@@ -2,7 +2,7 @@
   <div>
     <SectionHeader title="Company Overview" class="mb-md-8" />
 
-    <v-container max-width="1200" class="px-md-10 pt-10 pb-16">
+    <v-container max-width="1400" class="px-md-10 pt-10 pb-16">
       <v-row justify="space-between" align="center">
         <v-col cols="12" lg="6" class="order-2 order-lg-1">
           <div>
@@ -81,7 +81,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="py-16" max-width="1200">
+    <v-container class="py-16" max-width="1400">
       <div
         class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-15"
       >

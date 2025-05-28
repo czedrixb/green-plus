@@ -3,7 +3,7 @@
     <SectionHeader title="Customer Reviews" class="mb-md-8" />
 
     <v-container fluid class="py-16">
-      <v-container max-width="1200">
+      <v-container max-width="1400">
         <div class="text-center mb-10">
           <div class="mb-5 font-weight-bold text-blue-accent-4 text-h4">
             {{ t("customer-review") }}
