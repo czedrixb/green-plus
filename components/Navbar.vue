@@ -20,33 +20,40 @@
               <template v-for="link in navLinks" :key="link.title">
                 <NuxtLink
                   v-if="!link.children"
-                  class="nav-link mx-2"
-                  :class="{
-                    'text-decoration-none': route.path !== link.to,
-                    'text-black': true,
-                  }"
+                  class="nav-link mx-2 text-black"
+                  :class="{ 'text-decoration-none': route.path !== link.to }"
                   :to="link.to"
                 >
                   {{ t(link.title) }}
                 </NuxtLink>
 
-                <v-menu v-else open-on-hover>
-                  <template v-slot:activator="{ props }">
-                    <v-btn
-                      v-bind="props"
-                      class="nav-link mx-2 text-black text-capitalize"
-                      style="letter-spacing: 0"
-                      variant="text"
-                    >
-                      {{ t(link.title) }}
-                      <v-icon>mdi-chevron-down</v-icon>
-                    </v-btn>
+                <v-menu v-else v-model="openMenus[link.title]">
+                  <template v-slot:activator="{ props, on }">
+                    <div class="d-flex align-center mx-2">
+                      <NuxtLink
+                        :to="link.to"
+                        class="nav-link text-black text-capitalize"
+                        style="letter-spacing: 0"
+                      >
+                        {{ t(link.title) }}
+                      </NuxtLink>
+
+                      <div
+                        v-bind="props"
+                        v-on="on || {}"
+                        style="cursor: pointer"
+                      >
+                        <v-icon class="ml-1"> mdi-chevron-down </v-icon>
+                      </div>
+                    </div>
                   </template>
+
                   <v-list>
                     <v-list-item
                       v-for="child in link.children"
                       :key="child.title"
                       :to="child.to"
+                      @click="() => closeMenu(link.title)"
                     >
                       <v-list-item-title>{{
                         t(child.title)
@@ -84,22 +91,47 @@
       <v-navigation-drawer v-model="drawer" app temporary class="d-lg-none">
         <v-list>
           <template v-for="link in navLinks" :key="link.title">
-            <v-list-group v-if="link.children" :value="link.title">
-              <template v-slot:activator="{ props }">
-                <v-list-item
-                  v-bind="props"
-                  :title="t(link.title)"
-                ></v-list-item>
-              </template>
-              <v-list-item
-                v-for="child in link.children"
-                :key="child.title"
-                :to="child.to"
-                @click="closeDrawer"
+            <div v-if="link.children">
+              <div
+                class="px-4 py-3 d-flex align-center justify-space-between text-black"
               >
-                <v-list-item-title>{{ t(child.title) }}</v-list-item-title>
-              </v-list-item>
-            </v-list-group>
+                <NuxtLink
+                  :to="link.to"
+                  class="text-black"
+                  style="text-decoration: none; flex-grow: 1"
+                  @click="closeDrawer"
+                >
+                  {{ t(link.title) }}
+                </NuxtLink>
+
+                <v-icon
+                  @click.stop="toggleGroup(link.title)"
+                  style="cursor: pointer"
+                >
+                  {{
+                    expandedGroups[link.title]
+                      ? "mdi-chevron-up"
+                      : "mdi-chevron-down"
+                  }}
+                </v-icon>
+              </div>
+
+              <v-expand-transition>
+                <div v-show="expandedGroups[link.title]">
+                  <v-list-item
+                    v-for="child in link.children"
+                    :key="child.title"
+                    :to="child.to"
+                    @click="closeDrawer"
+                  >
+                    <v-list-item-title class="pl-8">{{
+                      t(child.title)
+                    }}</v-list-item-title>
+                  </v-list-item>
+                </div>
+              </v-expand-transition>
+            </div>
+
             <v-list-item v-else :to="link.to" @click="closeDrawer">
               <v-list-item-title>{{ t(link.title) }}</v-list-item-title>
             </v-list-item>
@@ -131,6 +163,18 @@ const toggleDrawer = () => {
 
 const closeDrawer = () => {
   drawer.value = false;
+};
+
+const openMenus = ref({});
+
+const closeMenu = (title) => {
+  openMenus.value[title] = false;
+};
+
+const expandedGroups = ref({});
+
+const toggleGroup = (title) => {
+  expandedGroups.value[title] = !expandedGroups.value[title];
 };
 
 const navLinks = [
