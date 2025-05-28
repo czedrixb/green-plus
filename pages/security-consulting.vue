@@ -49,10 +49,7 @@
             </div>
           </v-col>
         </v-row>
-        <div
-          class="position-absolute d-none d-lg-block outline-background"
-          style="max-width: 100%; width: 100%"
-        >
+        <div class="position-absolute d-none d-lg-block outline-background">
           <v-img
             src="/images/version2/security-consulting/outline-background.png"
             cover
