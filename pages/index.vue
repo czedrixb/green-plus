@@ -134,7 +134,7 @@
                 rounded="lg"
               ></v-img> -->
               <v-img
-                src="/images/homepage/green-plus.png"
+                src="/images/ai/homepage/green-plus.png"
                 cover
                 max-width="100%"
                 height="450"
@@ -163,7 +163,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/homepage/professional-security.png"
+                src="/images/ai/homepage/professional-security.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -186,7 +186,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/homepage/deploy-skilled.png"
+                src="/images/ai/homepage/deploy-skilled.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -209,7 +209,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/homepage/efficient-facilities.png"
+                src="/images/ai/homepage/efficient-facilities.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -232,7 +232,7 @@
           <v-col class="pa-lg-5" cols="12" sm="6" md="6" lg="6">
             <div>
               <v-img
-                src="/images/homepage/innovation-system.png"
+                src="/images/ai/homepage/innovation-system.png"
                 rounded="lg"
                 cover
                 max-width="100%"
@@ -260,7 +260,7 @@
         <v-row class="mb-8" align="center">
           <v-col cols="12" sm="6" md="6" lg="6">
             <v-img
-              src="/images/homepage/our-vision.png"
+              src="/images/ai/homepage/our-vision.png"
               cover
               max-width="95%"
               rounded="lg"
@@ -294,7 +294,7 @@
           </v-col>
           <v-col cols="12" sm="6" md="6" lg="6" class="order-1 order-lg-2">
             <v-img
-              src="/images/homepage/our-mission.png"
+              src="/images/ai/homepage/our-mission.png"
               cover
               max-width="95%"
               height="405"
