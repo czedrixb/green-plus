@@ -82,11 +82,11 @@
     </v-container>
 
     <v-container class="py-16" max-width="1400">
-      <div
+      <!-- <div
         class="text-h4 font-weight-bold text-blue-darken-4 text-center line-break-0 mb-15"
       >
         {{ t("key-history") }}
-      </div>
+      </div> -->
 
       <v-row
         v-for="(item, index) in timelineItems"

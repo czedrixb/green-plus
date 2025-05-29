@@ -101,13 +101,13 @@ import { useI18n } from "vue-i18n";
 const securityItems = [
   {
     number: 1,
-    image: "/images/version2/security-services/personal-protection.png",
+    image: "/images/version2/security-services/personal-protection2.png",
     title: "personal-protection",
     content: "preventing-stalking",
   },
   {
     number: 2,
-    image: "/images/version2/security-services/event-security.png",
+    image: "/images/version2/security-services/event-security2.png",
     title: "event-secure",
     content: "vip-celebrity",
   },

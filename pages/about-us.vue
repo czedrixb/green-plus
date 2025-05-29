@@ -46,7 +46,7 @@
           lg="6"
         >
           <v-img
-            src="/images/ai/about-us/ceo-message.png"
+            src="/images/ai/about-us/ceo-message2.png"
             cover
             max-width="100%"
             height="410"

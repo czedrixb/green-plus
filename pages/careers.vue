@@ -16,25 +16,26 @@
           <p class="line-break-0">
             {{ t("looking-experts-text-2") }}
           </p>
+          k
         </v-col>
       </v-row>
 
       <v-row align="center">
-        <v-col cols="12" sm="5" md="4" lg="4">
+        <v-col cols="12" sm="6" md="5" lg="5">
           <v-img
             src="/images/ai/careers/careers-img1.png"
             max-width="l00%"
             rounded="lg"
-            height="286"
+            height="400"
             cover
           ></v-img>
         </v-col>
-        <v-col cols="12" sm="7" md="8" lg="8">
+        <v-col cols="12" sm="6" md="7" lg="7">
           <v-img
-            src="/images/ai/careers/careers-img2.png"
+            src="/images/ai/careers/careers-img3.png"
             max-width="l00%"
             rounded="lg"
-            height="286"
+            height="400"
             cover
           ></v-img>
         </v-col>

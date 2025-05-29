@@ -9,7 +9,7 @@
             <div class="d-flex justify-center">
               <div class="position-relative">
                 <v-img
-                  src="/images/version2/greetings/trust-expertise.png"
+                  src="/images/ai/business-areas/security-services.png"
                   cover
                   width="369px"
                   height="233px"
