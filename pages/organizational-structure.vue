@@ -12,11 +12,11 @@
       <div class="d-flex justify-center">
         <div style="width: 100%; max-width: 671px">
           <v-img
-            src="/images/version2/organizational-structure/company-organization.png"
+            :src="orgImage"
             cover
             width="100%"
             aspect-ratio="671/343"
-            alt="company-organization"
+            :alt="orgAlt"
           />
         </div>
       </div>
@@ -168,6 +168,21 @@ import { useHead } from "@vueuse/head";
 import milestones from "@/milestones";
 import teams from "@/team";
 import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+
+const { locale } = useI18n();
+
+const orgImage = computed(() => {
+  return locale.value === "ko"
+    ? "/images/version2/organizational-structure/company-organization-ko.png"
+    : "/images/version2/organizational-structure/company-organization.png";
+});
+
+const orgAlt = computed(() => {
+  return locale.value === "ko"
+    ? "company-organization-ko"
+    : "company-organization";
+});
 
 const tableItems = [
   {
